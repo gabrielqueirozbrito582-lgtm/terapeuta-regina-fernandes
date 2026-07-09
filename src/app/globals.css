@@ -98,6 +98,31 @@ h2 {
   background: var(--rose-100) !important;
 }
 
+.nav-hamburger {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav-panel {
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+@media (min-width: 781px) {
+  .nav-panel {
+    display: none !important;
+  }
+}
+
+@media (max-width: 780px) {
+  .nav-links-desktop {
+    display: none !important;
+  }
+  .nav-hamburger {
+    display: flex !important;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -119,5 +144,27 @@ h2 {
   }
   h2 {
     font-size: clamp(24px, 6vw, 34px) !important;
+  }
+  section {
+    padding-top: clamp(40px, 11vw, 56px) !important;
+    padding-bottom: clamp(40px, 11vw, 56px) !important;
+  }
+  .cta-box {
+    padding: 40px 24px !important;
+  }
+  .hero-stats {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px !important;
+  }
+  .hero-stats > div {
+    min-width: 0;
+  }
+  .hero-stats .stat-figure {
+    font-size: 19px !important;
+  }
+  .hero-stats .stat-label {
+    font-size: 11.5px !important;
+    line-height: 1.35;
   }
 }

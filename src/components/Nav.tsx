@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { gsap, prefersReducedMotion } from "@/lib/gsap";
@@ -17,6 +17,17 @@ export default function Nav() {
   const pathname = usePathname();
   const navRef = useRef<HTMLDivElement>(null);
   const logoRef = useRef<HTMLSpanElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
+  const barTopRef = useRef<HTMLSpanElement>(null);
+  const barMidRef = useRef<HTMLSpanElement>(null);
+  const barBotRef = useRef<HTMLSpanElement>(null);
+  const [open, setOpen] = useState(false);
+  const [prevPathname, setPrevPathname] = useState(pathname);
+
+  if (pathname !== prevPathname) {
+    setPrevPathname(pathname);
+    setOpen(false);
+  }
 
   useEffect(() => {
     const nav = navRef.current;
@@ -40,6 +51,37 @@ export default function Nav() {
     return () => ctx.revert();
   }, []);
 
+  useEffect(() => {
+    gsap.set(panelRef.current, { height: 0 });
+  }, []);
+
+  useEffect(() => {
+    const panel = panelRef.current;
+    const top = barTopRef.current;
+    const mid = barMidRef.current;
+    const bot = barBotRef.current;
+    if (!panel) return;
+
+    if (prefersReducedMotion()) {
+      panel.style.height = open ? "auto" : "0px";
+      return;
+    }
+
+    if (open) {
+      gsap.set(panel, { height: "auto" });
+      const h = panel.offsetHeight;
+      gsap.fromTo(panel, { height: 0 }, { height: h, duration: 0.4, ease: "power2.out" });
+    } else {
+      gsap.to(panel, { height: 0, duration: 0.3, ease: "power2.in" });
+    }
+
+    if (top && mid && bot) {
+      gsap.to(top, { rotate: open ? 45 : 0, y: open ? 6 : 0, duration: 0.3, ease: "power2.out" });
+      gsap.to(mid, { opacity: open ? 0 : 1, duration: 0.2 });
+      gsap.to(bot, { rotate: open ? -45 : 0, y: open ? -6 : 0, duration: 0.3, ease: "power2.out" });
+    }
+  }, [open]);
+
   return (
     <nav
       style={{
@@ -61,8 +103,7 @@ export default function Nav() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          flexWrap: "wrap",
-          gap: "10px 24px",
+          gap: 24,
         }}
       >
         <Link
@@ -101,7 +142,9 @@ export default function Nav() {
             </span>
           </span>
         </Link>
-        <div style={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: "8px 6px" }}>
+
+        {/* Desktop links + CTA */}
+        <div className="nav-links-desktop" style={{ display: "flex", alignItems: "center", gap: 6 }}>
           {links.map((link) => {
             const active = pathname === link.href;
             return (
@@ -143,6 +186,82 @@ export default function Nav() {
             }}
             onMouseEnter={(e) => (e.currentTarget.style.background = "#6E3540")}
             onMouseLeave={(e) => (e.currentTarget.style.background = "#5B2A33")}
+          >
+            <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#D9A9A0" }}></span>
+            Agendar sessão
+          </a>
+        </div>
+
+        {/* Mobile hamburger */}
+        <button
+          className="nav-hamburger"
+          aria-label={open ? "Fechar menu" : "Abrir menu"}
+          aria-expanded={open}
+          onClick={() => setOpen((o) => !o)}
+          style={{
+            display: "none",
+            alignItems: "center",
+            justifyContent: "center",
+            width: 40,
+            height: 40,
+            flex: "none",
+            background: "transparent",
+            border: "none",
+            cursor: "pointer",
+            padding: 0,
+          }}
+        >
+          <span style={{ display: "flex", flexDirection: "column", gap: 5, width: 22 }}>
+            <span ref={barTopRef} style={{ display: "block", width: 22, height: 2, borderRadius: 2, background: "#5B2A33", transformOrigin: "50% 50%" }} />
+            <span ref={barMidRef} style={{ display: "block", width: 22, height: 2, borderRadius: 2, background: "#5B2A33" }} />
+            <span ref={barBotRef} style={{ display: "block", width: 22, height: 2, borderRadius: 2, background: "#5B2A33", transformOrigin: "50% 50%" }} />
+          </span>
+        </button>
+      </div>
+
+      {/* Mobile dropdown panel */}
+      <div ref={panelRef} className="nav-panel" style={{ overflow: "hidden" }}>
+        <div style={{ maxWidth: 1180, margin: "0 auto", padding: "4px 28px 22px", display: "flex", flexDirection: "column", gap: 4 }}>
+          {links.map((link) => {
+            const active = pathname === link.href;
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className={`nav-link${active ? " active" : ""}`}
+                style={{
+                  fontWeight: 500,
+                  fontSize: 16,
+                  padding: "13px 16px",
+                  borderRadius: 12,
+                  textDecoration: "none",
+                }}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
+          <a
+            href={WA_LINK}
+            target="_blank"
+            rel="noopener"
+            onClick={() => setOpen(false)}
+            style={{
+              marginTop: 8,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: 8,
+              background: "#5B2A33",
+              color: "#fff",
+              fontWeight: 600,
+              fontSize: 15,
+              padding: "14px 20px",
+              borderRadius: 999,
+              textDecoration: "none",
+              boxShadow: "0 8px 22px rgba(91,42,51,0.14)",
+            }}
           >
             <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#D9A9A0" }}></span>
             Agendar sessão

@@ -53,7 +53,7 @@ export default function Contato() {
           }}
         >
           {/* WhatsApp card */}
-          <div style={{ background: "#5B2A33", color: "#fff", borderRadius: 24, padding: 48, position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+          <div className="cta-box" style={{ background: "#5B2A33", color: "#fff", borderRadius: 24, padding: 48, position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "center" }}>
             <ParallaxBlob
               range={16}
               style={{ position: "absolute", top: -60, right: -40, width: 220, height: 220, borderRadius: "50%", background: "rgba(217,169,160,0.12)" }}
@@ -143,7 +143,7 @@ export default function Contato() {
 
       {/* CTA FINAL */}
       <section style={{ background: "#FAF7F4", padding: "0 28px 96px" }}>
-        <div style={{ maxWidth: 1080, margin: "0 auto", background: "#5B2A33", borderRadius: 32, padding: "72px 56px", position: "relative", overflow: "hidden", textAlign: "center" }}>
+        <div className="cta-box" style={{ maxWidth: 1080, margin: "0 auto", background: "#5B2A33", borderRadius: 32, padding: "72px 56px", position: "relative", overflow: "hidden", textAlign: "center" }}>
           <ParallaxBlob
             range={20}
             style={{ position: "absolute", bottom: -90, left: -50, width: 280, height: 280, borderRadius: "50%", background: "rgba(217,169,160,0.1)" }}

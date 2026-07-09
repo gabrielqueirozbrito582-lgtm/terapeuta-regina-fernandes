@@ -129,20 +129,20 @@ export default function Home() {
                 Como funciona a TRG →
               </Link>
             </div>
-            <div style={{ display: "flex", gap: 32, marginTop: 44, flexWrap: "wrap" }}>
+            <div className="hero-stats" style={{ display: "flex", gap: 32, marginTop: 44, flexWrap: "wrap" }}>
               <div>
-                <div style={{ fontWeight: 700, fontSize: 30, color: "#8B4A52", letterSpacing: "-0.02em" }}>
+                <div className="stat-figure" style={{ fontWeight: 700, fontSize: 30, color: "#8B4A52", letterSpacing: "-0.02em" }}>
                   <CountUp value={10} prefix="+" suffix=" anos" immediate delay={1.1} />
                 </div>
-                <div style={{ fontSize: 13.5, color: "#8A776F", marginTop: 2 }}>de experiência clínica</div>
+                <div className="stat-label" style={{ fontSize: 13.5, color: "#8A776F", marginTop: 2 }}>de experiência clínica</div>
               </div>
               <div>
-                <div style={{ fontWeight: 700, fontSize: 30, color: "#8B4A52", letterSpacing: "-0.02em" }}>3ª–4ª</div>
-                <div style={{ fontSize: 13.5, color: "#8A776F", marginTop: 2 }}>sessão: primeiros resultados</div>
+                <div className="stat-figure" style={{ fontWeight: 700, fontSize: 30, color: "#8B4A52", letterSpacing: "-0.02em" }}>3ª–4ª</div>
+                <div className="stat-label" style={{ fontSize: 13.5, color: "#8A776F", marginTop: 2 }}>sessão: primeiros resultados</div>
               </div>
               <div>
-                <div style={{ fontWeight: 700, fontSize: 30, color: "#8B4A52", letterSpacing: "-0.02em" }}>SP + online</div>
-                <div style={{ fontSize: 13.5, color: "#8A776F", marginTop: 2 }}>Brasil e exterior</div>
+                <div className="stat-figure" style={{ fontWeight: 700, fontSize: 30, color: "#8B4A52", letterSpacing: "-0.02em" }}>SP + online</div>
+                <div className="stat-label" style={{ fontSize: 13.5, color: "#8A776F", marginTop: 2 }}>Brasil e exterior</div>
               </div>
             </div>
           </Reveal>
@@ -444,7 +444,7 @@ export default function Home() {
 
       {/* CTA FINAL */}
       <section style={{ background: "#FAF7F4", padding: "0 28px 96px" }}>
-        <div style={{ maxWidth: 1080, margin: "0 auto", background: "#5B2A33", borderRadius: 32, padding: "72px 56px", position: "relative", overflow: "hidden", textAlign: "center" }}>
+        <div className="cta-box" style={{ maxWidth: 1080, margin: "0 auto", background: "#5B2A33", borderRadius: 32, padding: "72px 56px", position: "relative", overflow: "hidden", textAlign: "center" }}>
           <ParallaxBlob
             range={20}
             style={{ position: "absolute", top: -80, right: -60, width: 280, height: 280, borderRadius: "50%", background: "rgba(217,169,160,0.12)" }}
