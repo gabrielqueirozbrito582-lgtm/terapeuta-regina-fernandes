@@ -1,20 +1,20 @@
 :root {
   --bg: #faf7f4;
-  --rose-950: #3a1b20;
-  --rose-900: #5b2a33;
-  --rose-700: #6e3540;
-  --rose-600: #8b4a52;
-  --rose-100: #f3e3df;
-  --blush: #d9a9a0;
-  --blush-soft: #e8c9be;
-  --text: #6b5850;
-  --text-muted: #8a776f;
-  --text-faint: #afa098;
-  --ink: #4a3630;
-  --border: #eae0da;
-  --border-soft: #d9c9c2;
-  --rose-100-on-dark: #e8d2cc;
-  --rose-200-on-dark: #c99691;
+  --rose-950: #16231C;
+  --rose-900: #2C3E35;
+  --rose-700: #3D8B6F;
+  --rose-600: #5C9E8A;
+  --rose-100: #E8F4F0;
+  --blush: #5C9E8A;
+  --blush-soft: #E8F4F0;
+  --text: #45564C;
+  --text-muted: #64766C;
+  --text-faint: #93A69C;
+  --ink: #263B31;
+  --border: #DCEBE5;
+  --border-soft: #C7DED5;
+  --rose-100-on-dark: #CFE8DD;
+  --rose-200-on-dark: #7FC2A8;
 }
 
 * {
@@ -50,13 +50,15 @@ img {
 h1,
 h2 {
   font-family: var(--font-serif), Georgia, serif !important;
-  letter-spacing: 0 !important;
+  letter-spacing: 0.01em !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
 }
-h1 {
-  font-weight: 400 !important;
-}
-h2 {
-  font-weight: 500 !important;
+
+.eyebrow,
+.label {
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
 }
 
 .nav-link {

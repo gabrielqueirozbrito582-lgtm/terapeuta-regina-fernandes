@@ -52,11 +52,13 @@ export default function Highlight({
     <span
       ref={ref}
       style={{
-        background: "linear-gradient(#E8C9BE,#E8C9BE)",
+        background: "linear-gradient(#E8F4F0,#E8F4F0)",
         backgroundSize: "0% 0.42em",
         backgroundPosition: "0 84%",
         backgroundRepeat: "no-repeat",
         padding: "0 .04em",
+        color: "#5C9E8A",
+        fontStyle: "italic",
       }}
     >
       {children}

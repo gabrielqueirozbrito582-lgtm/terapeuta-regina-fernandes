@@ -62,7 +62,7 @@ export default function FaqItem({ q, a }: { q: string; a: string }) {
           ref={plusRef}
           style={{
             flex: "none",
-            color: "#D9A9A0",
+            color: "#5C9E8A",
             fontSize: 24,
             lineHeight: 1,
             display: "inline-block",
@@ -72,7 +72,7 @@ export default function FaqItem({ q, a }: { q: string; a: string }) {
         </span>
       </button>
       <div ref={bodyRef} style={{ overflow: "hidden" }}>
-        <div style={{ padding: "0 26px 24px", fontSize: 15.5, lineHeight: 1.72, color: "#E8D2CC" }}>{a}</div>
+        <div style={{ padding: "0 26px 24px", fontSize: 15.5, lineHeight: 1.72, color: "#CFE8DD" }}>{a}</div>
       </div>
     </div>
   );

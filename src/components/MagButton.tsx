@@ -21,23 +21,25 @@ const base: CSSProperties = {
   padding: "16px 28px",
   borderRadius: "999px",
   textDecoration: "none",
+  textTransform: "uppercase",
+  letterSpacing: "0.04em",
   willChange: "transform",
 };
 
 const variants: Record<"solid" | "lime", CSSProperties> = {
   solid: {
-    background: "#5B2A33",
+    background: "#5C9E8A",
     color: "#fff",
-    boxShadow: "0 12px 28px rgba(91,42,51,0.18)",
+    boxShadow: "0 12px 28px rgba(92,158,138,0.28)",
     transition: "background .18s ease",
   },
   lime: {
-    background: "#D9A9A0",
-    color: "#5B2A33",
+    background: "#FFFFFF",
+    color: "#2C3E35",
     fontWeight: 700,
     fontSize: "17px",
     padding: "17px 32px",
-    boxShadow: "0 12px 30px rgba(139,74,82,0.34)",
+    boxShadow: "0 12px 30px rgba(44,62,53,0.2)",
   },
 };
 
@@ -55,14 +57,16 @@ export default function MagButton({
     const el = ref.current;
     if (!el) return;
     gsap.to(el, { y: -3, scale: 1.015, duration: 0.35, ease: "power3.out" });
-    if (variant === "solid") el.style.background = "#6E3540";
+    if (variant === "solid") el.style.background = "#3D8B6F";
+    if (variant === "lime") el.style.background = "#E8F4F0";
   };
 
   const onLeave = () => {
     const el = ref.current;
     if (!el) return;
     gsap.to(el, { y: 0, scale: 1, duration: 0.45, ease: "elastic.out(1, 0.5)" });
-    if (variant === "solid") el.style.background = "#5B2A33";
+    if (variant === "solid") el.style.background = "#5C9E8A";
+    if (variant === "lime") el.style.background = "#FFFFFF";
   };
 
   return (

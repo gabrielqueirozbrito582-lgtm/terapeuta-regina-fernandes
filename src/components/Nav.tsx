@@ -91,7 +91,7 @@ export default function Nav() {
         background: "rgba(255,255,255,0.86)",
         backdropFilter: "blur(12px)",
         WebkitBackdropFilter: "blur(12px)",
-        borderBottom: "1px solid #EAE0DA",
+        borderBottom: "1px solid #DCEBE5",
       }}
     >
       <div
@@ -121,23 +121,23 @@ export default function Nav() {
               width: 38,
               height: 38,
               borderRadius: "50%",
-              background: "#5B2A33",
+              background: "#2C3E35",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               flex: "none",
             }}
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9A9A0" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5C9E8A" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <path d="M11 20A7 7 0 0 1 4 13V6a1 1 0 0 1 1-1h6a7 7 0 0 1 7 7v1"></path>
               <path d="M11 20a9 9 0 0 1 4-15"></path>
             </svg>
           </span>
           <span style={{ display: "flex", flexDirection: "column", lineHeight: 1.05 }}>
-            <span style={{ fontWeight: 600, fontSize: 16, color: "#5B2A33", letterSpacing: "-0.01em" }}>
+            <span style={{ fontWeight: 600, fontSize: 16, color: "#2C3E35", letterSpacing: "-0.01em" }}>
               Regina Fernandes
             </span>
-            <span style={{ fontWeight: 500, fontSize: 10, letterSpacing: "0.18em", textTransform: "uppercase", color: "#8B4A52" }}>
+            <span style={{ fontWeight: 500, fontSize: 10, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A" }}>
               Terapeuta · TRG
             </span>
           </span>
@@ -174,20 +174,22 @@ export default function Nav() {
               display: "inline-flex",
               alignItems: "center",
               gap: 8,
-              background: "#5B2A33",
+              background: "#5C9E8A",
               color: "#fff",
               fontWeight: 600,
               fontSize: 14,
               padding: "11px 20px",
               borderRadius: 999,
               textDecoration: "none",
-              boxShadow: "0 8px 22px rgba(91,42,51,0.14)",
+              textTransform: "uppercase",
+              letterSpacing: "0.03em",
+              boxShadow: "0 8px 22px rgba(92,158,138,0.24)",
               transition: "background .18s ease",
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.background = "#6E3540")}
-            onMouseLeave={(e) => (e.currentTarget.style.background = "#5B2A33")}
+            onMouseEnter={(e) => (e.currentTarget.style.background = "#3D8B6F")}
+            onMouseLeave={(e) => (e.currentTarget.style.background = "#5C9E8A")}
           >
-            <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#D9A9A0" }}></span>
+            <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#fff" }}></span>
             Agendar sessão
           </a>
         </div>
@@ -212,9 +214,9 @@ export default function Nav() {
           }}
         >
           <span style={{ display: "flex", flexDirection: "column", gap: 5, width: 22 }}>
-            <span ref={barTopRef} style={{ display: "block", width: 22, height: 2, borderRadius: 2, background: "#5B2A33", transformOrigin: "50% 50%" }} />
-            <span ref={barMidRef} style={{ display: "block", width: 22, height: 2, borderRadius: 2, background: "#5B2A33" }} />
-            <span ref={barBotRef} style={{ display: "block", width: 22, height: 2, borderRadius: 2, background: "#5B2A33", transformOrigin: "50% 50%" }} />
+            <span ref={barTopRef} style={{ display: "block", width: 22, height: 2, borderRadius: 2, background: "#2C3E35", transformOrigin: "50% 50%" }} />
+            <span ref={barMidRef} style={{ display: "block", width: 22, height: 2, borderRadius: 2, background: "#2C3E35" }} />
+            <span ref={barBotRef} style={{ display: "block", width: 22, height: 2, borderRadius: 2, background: "#2C3E35", transformOrigin: "50% 50%" }} />
           </span>
         </button>
       </div>
@@ -253,17 +255,19 @@ export default function Nav() {
               alignItems: "center",
               justifyContent: "center",
               gap: 8,
-              background: "#5B2A33",
+              background: "#5C9E8A",
               color: "#fff",
               fontWeight: 600,
               fontSize: 15,
               padding: "14px 20px",
               borderRadius: 999,
               textDecoration: "none",
-              boxShadow: "0 8px 22px rgba(91,42,51,0.14)",
+              textTransform: "uppercase",
+              letterSpacing: "0.03em",
+              boxShadow: "0 8px 22px rgba(92,158,138,0.24)",
             }}
           >
-            <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#D9A9A0" }}></span>
+            <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#fff" }}></span>
             Agendar sessão
           </a>
         </div>

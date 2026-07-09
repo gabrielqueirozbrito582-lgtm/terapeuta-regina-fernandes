@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 
 export default function Footer() {
   return (
-    <footer style={{ background: "#3A1B20", color: "#fff" }}>
+    <footer style={{ background: "#16231C", color: "#fff" }}>
       <div style={{ maxWidth: 1180, margin: "0 auto", padding: "72px 28px 40px" }}>
         <Reveal
           className="rgrid"
@@ -22,26 +22,26 @@ export default function Footer() {
                   width: 40,
                   height: 40,
                   borderRadius: "50%",
-                  background: "#D9A9A0",
+                  background: "#5C9E8A",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   flex: "none",
                 }}
               >
-                <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#5B2A33" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2C3E35" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M11 20A7 7 0 0 1 4 13V6a1 1 0 0 1 1-1h6a7 7 0 0 1 7 7v1"></path>
                   <path d="M11 20a9 9 0 0 1 4-15"></path>
                 </svg>
               </span>
               <span style={{ display: "flex", flexDirection: "column", lineHeight: 1.1 }}>
                 <span style={{ fontWeight: 600, fontSize: 17 }}>Regina Fernandes</span>
-                <span style={{ fontWeight: 400, fontSize: 11, letterSpacing: "0.16em", textTransform: "uppercase", color: "#C99691" }}>
+                <span style={{ fontWeight: 400, fontSize: 11, letterSpacing: "0.16em", textTransform: "uppercase", color: "#7FC2A8" }}>
                   Terapeuta · TRG
                 </span>
               </span>
             </div>
-            <p style={{ fontSize: 14.5, lineHeight: 1.65, color: "#E8D2CC", maxWidth: 340, margin: "0 0 22px" }}>
+            <p style={{ fontSize: 14.5, lineHeight: 1.65, color: "#CFE8DD", maxWidth: 340, margin: "0 0 22px" }}>
               Terapia de Reprocessamento Generativo. Resolvendo na raiz — para você voltar a viver com leveza.
             </p>
             <a
@@ -52,8 +52,8 @@ export default function Footer() {
                 display: "inline-flex",
                 alignItems: "center",
                 gap: 8,
-                background: "#D9A9A0",
-                color: "#5B2A33",
+                background: "#5C9E8A",
+                color: "#2C3E35",
                 fontWeight: 600,
                 fontSize: 14,
                 padding: "11px 20px",
@@ -61,12 +61,12 @@ export default function Footer() {
                 textDecoration: "none",
               }}
             >
-              <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#5B2A33" }}></span>
+              <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#2C3E35" }}></span>
               Falar no WhatsApp
             </a>
           </div>
           <div>
-            <div style={{ fontWeight: 600, fontSize: 12, letterSpacing: "0.16em", textTransform: "uppercase", color: "#C99691", marginBottom: 16 }}>
+            <div style={{ fontWeight: 600, fontSize: 12, letterSpacing: "0.16em", textTransform: "uppercase", color: "#7FC2A8", marginBottom: 16 }}>
               Navegação
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 11 }}>
@@ -77,10 +77,10 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <div style={{ fontWeight: 600, fontSize: 12, letterSpacing: "0.16em", textTransform: "uppercase", color: "#C99691", marginBottom: 16 }}>
+            <div style={{ fontWeight: 600, fontSize: 12, letterSpacing: "0.16em", textTransform: "uppercase", color: "#7FC2A8", marginBottom: 16 }}>
               Atendimento
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 11, fontSize: 14.5, color: "#F3E3DF" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: 11, fontSize: 14.5, color: "#E8F4F0" }}>
               <span>Presencial em São Paulo</span>
               <span>Online — Brasil e exterior</span>
               <a href={INSTAGRAM_URL} target="_blank" rel="noopener" className="footer-link">
@@ -102,7 +102,7 @@ export default function Footer() {
             gap: 12,
             justifyContent: "space-between",
             fontSize: 12.5,
-            color: "#C99691",
+            color: "#7FC2A8",
           }}
         >
           <span>© 2026 Regina Fernandes · Terapeuta TRG e Psicanalista</span>
