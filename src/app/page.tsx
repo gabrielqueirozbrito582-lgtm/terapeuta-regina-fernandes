@@ -15,27 +15,6 @@ const pains = [
   "As mesmas situações, os mesmos padrões, os mesmos problemas continuam se repetindo — como se uma parte de você ainda estivesse presa em algo que aconteceu há anos.",
 ];
 
-const testimonials = [
-  {
-    quote:
-      "Cheguei na Terapeuta Regina sem acreditar que fosse mudar. Depois das sessões, algo que eu não consigo explicar com palavras simplesmente saiu de mim. Parece que tirei um peso que eu já nem sabia mais que estava carregando.",
-    author: "M.S., 38 anos · São Paulo",
-    initials: "MS",
-  },
-  {
-    quote:
-      "Eu acordava todo dia com aquela ansiedade no peito sem saber de onde vinha. Achei que era assim que eu era. Depois das sessões com a Terapeuta Regina entendi que não era. Hoje eu acordo diferente.",
-    author: "C.L., 44 anos · cliente online",
-    initials: "CL",
-  },
-  {
-    quote:
-      "Estava sem vontade de viver. Não conseguia sair de casa, o mundo parecia escuro e triste. Hoje sinto prazer nas mínimas coisas. Sou dona de mim, com autoestima e muita vontade de viver.",
-    author: "R.P. · cliente da Terapeuta Regina",
-    initials: "RP",
-  },
-];
-
 export default function Home() {
   return (
     <>
@@ -395,50 +374,6 @@ export default function Home() {
               </p>
             </div>
           </Reveal>
-        </div>
-      </section>
-
-      {/* PROVA SOCIAL */}
-      <section style={{ background: "#FAF7F4", padding: "92px 28px" }}>
-        <div style={{ maxWidth: 1180, margin: "0 auto" }}>
-          <Reveal style={{ textAlign: "center", marginBottom: 52 }}>
-            <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 18 }}>
-              Prova social
-            </span>
-            <h2 style={{ fontWeight: 700, fontSize: 38, lineHeight: 1.16, letterSpacing: "-0.02em", color: "#2C3E35", margin: 0 }}>
-              O que diz quem passou por aqui
-            </h2>
-          </Reveal>
-          <Reveal className="rgrid" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 22 }}>
-            {testimonials.map((t) => (
-              <div
-                key={t.author}
-                style={{
-                  background: "#fff",
-                  borderRadius: 20,
-                  padding: 32,
-                  boxShadow: "0 8px 24px rgba(44,62,53,0.06)",
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: 18,
-                }}
-              >
-                <svg width="34" height="34" viewBox="0 0 24 24" fill="#5C9E8A">
-                  <path d="M9.5 6C7 6 5 8 5 10.5V18h6v-6H8c0-1.7 1.3-3 3-3V6H9.5zm9 0C16 6 14 8 14 10.5V18h6v-6h-3c0-1.7 1.3-3 3-3V6h-1.5z"></path>
-                </svg>
-                <p style={{ fontSize: 15.5, lineHeight: 1.7, color: "#263B31", margin: 0, flex: 1 }}>{t.quote}</p>
-                <div style={{ display: "flex", alignItems: "center", gap: 12, paddingTop: 6, borderTop: "1px dashed #C7DED5" }}>
-                  <span style={{ width: 40, height: 40, borderRadius: "50%", background: "#E8F4F0", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 600, color: "#5C9E8A", fontSize: 15, flex: "none" }}>
-                    {t.initials}
-                  </span>
-                  <div style={{ fontSize: 13.5, color: "#64766C" }}>{t.author}</div>
-                </div>
-              </div>
-            ))}
-          </Reveal>
-          <p style={{ textAlign: "center", fontSize: 12.5, color: "#93A69C", margin: "28px auto 0", maxWidth: 640 }}>
-            Depoimentos modelo baseados em casos reais — para validação e substituição pelos reais. Mais de 10 anos transformando vidas · Presencial em São Paulo · Online para o Brasil e o mundo.
-          </p>
         </div>
       </section>
 
