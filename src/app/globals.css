@@ -1,0 +1,123 @@
+:root {
+  --bg: #faf7f4;
+  --rose-950: #3a1b20;
+  --rose-900: #5b2a33;
+  --rose-700: #6e3540;
+  --rose-600: #8b4a52;
+  --rose-100: #f3e3df;
+  --blush: #d9a9a0;
+  --blush-soft: #e8c9be;
+  --text: #6b5850;
+  --text-muted: #8a776f;
+  --text-faint: #afa098;
+  --ink: #4a3630;
+  --border: #eae0da;
+  --border-soft: #d9c9c2;
+  --rose-100-on-dark: #e8d2cc;
+  --rose-200-on-dark: #c99691;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-poppins), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--rose-600);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--rose-900);
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  font-family: var(--font-serif), Georgia, serif !important;
+  letter-spacing: 0 !important;
+}
+h1 {
+  font-weight: 400 !important;
+}
+h2 {
+  font-weight: 500 !important;
+}
+
+.nav-link {
+  color: var(--text);
+  background: transparent;
+  transition: color 0.18s ease, background 0.18s ease;
+}
+.nav-link:hover {
+  color: var(--rose-900);
+  background: var(--rose-100);
+}
+.nav-link.active {
+  color: var(--rose-900);
+  background: var(--rose-100);
+}
+
+.footer-link {
+  color: var(--rose-100-on-dark);
+  transition: color 0.18s ease;
+}
+.footer-link:hover {
+  color: var(--blush);
+}
+
+.card-link {
+  color: var(--rose-600);
+  font-weight: 600;
+  transition: color 0.18s ease;
+}
+.card-link:hover {
+  color: var(--rose-900);
+}
+
+.outline-btn {
+  transition: border-color 0.18s ease, background 0.18s ease;
+}
+.outline-btn:hover {
+  border-color: var(--rose-900) !important;
+  background: var(--rose-100) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@media (max-width: 860px) {
+  .rgrid {
+    grid-template-columns: 1fr !important;
+  }
+  .rgrid > * {
+    grid-column: auto !important;
+  }
+}
+
+@media (max-width: 620px) {
+  h1 {
+    font-size: clamp(30px, 8vw, 46px) !important;
+  }
+  h2 {
+    font-size: clamp(24px, 6vw, 34px) !important;
+  }
+}
