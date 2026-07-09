@@ -442,6 +442,46 @@ export default function Home() {
         </div>
       </section>
 
+      {/* DEPOIMENTOS - PRINTS */}
+      <section style={{ background: "#F5F7F5", padding: "92px 28px" }}>
+        <div style={{ maxWidth: 900, margin: "0 auto" }}>
+          <Reveal style={{ textAlign: "center", marginBottom: 52 }}>
+            <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 18 }}>
+              Depoimentos reais
+            </span>
+            <h2 style={{ fontWeight: 700, fontSize: 38, lineHeight: 1.16, letterSpacing: "-0.02em", color: "#2C3E35", margin: 0 }}>
+              O que dizem nossos clientes
+            </h2>
+          </Reveal>
+          <Reveal className="rgrid" style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)", gap: 24 }}>
+            {[
+              { src: "/images/depoimentos/depoimento-1.jpg", w: 540, h: 812 },
+              { src: "/images/depoimentos/depoimento-2.jpg", w: 540, h: 1084 },
+              { src: "/images/depoimentos/depoimento-3.jpg", w: 540, h: 1080 },
+              { src: "/images/depoimentos/depoimento-4.jpg", w: 540, h: 1073 },
+            ].map((img) => (
+              <div
+                key={img.src}
+                style={{
+                  borderRadius: 12,
+                  overflow: "hidden",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  lineHeight: 0,
+                }}
+              >
+                <Image
+                  src={img.src}
+                  alt="Depoimento de cliente sobre a terapia TRG"
+                  width={img.w}
+                  height={img.h}
+                  style={{ width: "100%", height: "auto", display: "block" }}
+                />
+              </div>
+            ))}
+          </Reveal>
+        </div>
+      </section>
+
       {/* CTA FINAL */}
       <section style={{ background: "#FAF7F4", padding: "0 28px 96px" }}>
         <div className="cta-box" style={{ maxWidth: 1080, margin: "0 auto", background: "#2C3E35", borderRadius: 32, padding: "72px 56px", position: "relative", overflow: "hidden", textAlign: "center" }}>
