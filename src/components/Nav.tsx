@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { gsap, prefersReducedMotion } from "@/lib/gsap";
@@ -45,7 +46,7 @@ export default function Nav() {
           },
         })
         .to(nav, { paddingTop: 8, paddingBottom: 8, ease: "none" }, 0)
-        .to(logo, { width: 33, height: 33, ease: "none" }, 0);
+        .to(logo, { width: 52, height: 52, ease: "none" }, 0);
     });
 
     return () => ctx.revert();
@@ -118,20 +119,24 @@ export default function Nav() {
           <span
             ref={logoRef}
             style={{
-              width: 38,
-              height: 38,
+              width: 60,
+              height: 60,
               borderRadius: "50%",
-              background: "#2C3E35",
+              overflow: "hidden",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               flex: "none",
             }}
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5C9E8A" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M11 20A7 7 0 0 1 4 13V6a1 1 0 0 1 1-1h6a7 7 0 0 1 7 7v1"></path>
-              <path d="M11 20a9 9 0 0 1 4-15"></path>
-            </svg>
+            <Image
+              src="/images/selo-trg.jpg"
+              alt="Terapeuta Certificada TRG"
+              width={60}
+              height={60}
+              style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "50%" }}
+              priority
+            />
           </span>
           <span style={{ display: "flex", flexDirection: "column", lineHeight: 1.05 }}>
             <span style={{ fontWeight: 600, fontSize: 16, color: "#2C3E35", letterSpacing: "-0.01em" }}>

@@ -195,6 +195,21 @@ export default function Sobre() {
               </p>
             </div>
           </Reveal>
+          <Reveal style={{ display: "flex", justifyContent: "center", marginTop: 40 }}>
+            <Image
+              src="/images/selo-trg.jpg"
+              alt="Terapeuta Certificada TRG"
+              width={120}
+              height={120}
+              style={{
+                width: 120,
+                height: 120,
+                borderRadius: "50%",
+                objectFit: "cover",
+                boxShadow: "0 4px 16px rgba(0,0,0,0.1)",
+              }}
+            />
+          </Reveal>
         </div>
       </section>
 
