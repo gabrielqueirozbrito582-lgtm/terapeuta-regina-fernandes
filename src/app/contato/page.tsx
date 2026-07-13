@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import Highlight from "@/components/Highlight";
 import MagButton from "@/components/MagButton";
@@ -23,18 +24,60 @@ export default function Contato() {
   return (
     <>
       {/* HERO CONTATO */}
-      <section style={{ background: "#FAF7F4", padding: "72px 28px 56px", textAlign: "center" }}>
-        <Reveal immediate style={{ maxWidth: 760, margin: "0 auto" }}>
-          <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 22 }}>
-            O próximo passo é uma conversa
-          </span>
-          <h1 style={{ fontWeight: 700, fontSize: 46, lineHeight: 1.12, letterSpacing: "-0.02em", color: "#1E2D28", margin: "0 0 20px" }}>
-            A primeira mensagem é o passo mais difícil. O resto, eu <Highlight immediate delay={0.7}>cuido</Highlight>.
-          </h1>
-          <p style={{ fontSize: 18, lineHeight: 1.65, color: "#45564C", maxWidth: 540, margin: "0 auto" }}>
-            Sem formulário, sem burocracia, sem compromisso. Você manda uma mensagem no WhatsApp e a Terapeuta Regina responde pessoalmente.
-          </p>
-        </Reveal>
+      <section style={{ background: "#FAF7F4", padding: "72px 28px 56px" }}>
+        <div
+          className="rgrid"
+          style={{
+            maxWidth: 1100,
+            margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: "1.1fr 0.9fr",
+            gap: 56,
+            alignItems: "center",
+          }}
+        >
+          <Reveal immediate>
+            <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 22 }}>
+              O próximo passo é uma conversa
+            </span>
+            <h1 style={{ fontWeight: 700, fontSize: 44, lineHeight: 1.14, letterSpacing: "-0.02em", color: "#1E2D28", margin: "0 0 20px" }}>
+              A primeira mensagem é o passo mais difícil. O resto, eu <Highlight immediate delay={0.7}>cuido</Highlight>.
+            </h1>
+            <p style={{ fontSize: 18, lineHeight: 1.65, color: "#45564C", maxWidth: 480, margin: 0 }}>
+              Sem formulário, sem burocracia, sem compromisso. Você manda uma mensagem no WhatsApp e a Terapeuta Regina responde pessoalmente.
+            </p>
+          </Reveal>
+          <Reveal immediate delay={0.15} style={{ position: "relative" }}>
+            <div
+              style={{
+                position: "absolute",
+                inset: "-14px -14px 30px 20px",
+                background: "#5C9E8A",
+                borderRadius: 30,
+                transform: "rotate(-2.5deg)",
+              }}
+            />
+            <div
+              style={{
+                position: "relative",
+                borderRadius: 26,
+                overflow: "hidden",
+                boxShadow: "0 24px 60px rgba(30,45,40,0.2)",
+                border: "6px solid #fff",
+                height: 420,
+              }}
+            >
+              <Image
+                src="/images/regina-contato.jpg"
+                alt="Terapeuta Regina Fernandes"
+                fill
+                priority
+                sizes="(max-width: 900px) 100vw, 440px"
+                style={{ objectFit: "cover", objectPosition: "center 15%" }}
+              />
+            </div>
+          </Reveal>
+        </div>
       </section>
 
       {/* CANAIS */}

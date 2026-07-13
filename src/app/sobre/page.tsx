@@ -118,22 +118,63 @@ export default function Sobre() {
 
       {/* HISTÓRIA */}
       <section style={{ background: "#FAF7F4", padding: "72px 28px" }}>
-        <Reveal style={{ maxWidth: 760, margin: "0 auto" }}>
-          <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 16 }}>
-            Como tudo começou
-          </span>
-          <h2 style={{ fontWeight: 700, fontSize: 32, lineHeight: 1.2, letterSpacing: "-0.02em", color: "#1E2D28", margin: "0 0 24px" }}>
-            A terapia chegou até mim por amor — e por necessidade.
-          </h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: 20, fontSize: 17, lineHeight: 1.78, color: "#45564C" }}>
-            <p style={{ margin: 0 }}>
-              Eu não escolhi a terapia como uma carreira distante. Ela nasceu de dentro de casa. Vi pessoas que eu amo travadas por dores que ninguém conseguia alcançar — e senti, na pele, o quanto é angustiante assistir a alguém sofrer sem saber como ajudar.
-            </p>
-            <p style={{ margin: 0 }}>
-              Foi essa necessidade real de cuidar da minha própria família que me levou a estudar a fundo o funcionamento da mente. Eu precisava entender por que a dor ficava presa. E, mais do que entender, precisava de um caminho que realmente libertasse.
-            </p>
-          </div>
-        </Reveal>
+        <div
+          className="rgrid"
+          style={{
+            maxWidth: 1100,
+            margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: "1.05fr 0.95fr",
+            gap: 56,
+            alignItems: "center",
+          }}
+        >
+          <Reveal>
+            <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 16 }}>
+              Como tudo começou
+            </span>
+            <h2 style={{ fontWeight: 700, fontSize: 32, lineHeight: 1.2, letterSpacing: "-0.02em", color: "#1E2D28", margin: "0 0 24px" }}>
+              A terapia chegou até mim por amor — e por necessidade.
+            </h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: 20, fontSize: 17, lineHeight: 1.78, color: "#45564C" }}>
+              <p style={{ margin: 0 }}>
+                Eu não escolhi a terapia como uma carreira distante. Ela nasceu de dentro de casa. Vi pessoas que eu amo travadas por dores que ninguém conseguia alcançar — e senti, na pele, o quanto é angustiante assistir a alguém sofrer sem saber como ajudar.
+              </p>
+              <p style={{ margin: 0 }}>
+                Foi essa necessidade real de cuidar da minha própria família que me levou a estudar a fundo o funcionamento da mente. Eu precisava entender por que a dor ficava presa. E, mais do que entender, precisava de um caminho que realmente libertasse.
+              </p>
+            </div>
+          </Reveal>
+          <Reveal delay={0.15} style={{ position: "relative" }}>
+            <div
+              style={{
+                position: "absolute",
+                inset: "-14px -14px 30px 20px",
+                background: "#5C9E8A",
+                borderRadius: 30,
+                transform: "rotate(-2.5deg)",
+              }}
+            />
+            <div
+              style={{
+                position: "relative",
+                borderRadius: 26,
+                overflow: "hidden",
+                boxShadow: "0 24px 60px rgba(30,45,40,0.2)",
+                border: "6px solid #fff",
+                height: 460,
+              }}
+            >
+              <Image
+                src="/images/regina-historia.jpg"
+                alt="Terapeuta Regina Fernandes"
+                fill
+                sizes="(max-width: 900px) 100vw, 480px"
+                style={{ objectFit: "cover", objectPosition: "center 15%" }}
+              />
+            </div>
+          </Reveal>
+        </div>
       </section>
 
       {/* POR QUE A TRG */}
