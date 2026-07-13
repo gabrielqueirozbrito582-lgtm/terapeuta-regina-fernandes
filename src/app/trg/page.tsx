@@ -42,7 +42,7 @@ export default function Trg() {
           <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 22 }}>
             Terapia de Reprocessamento Generativo
           </span>
-          <h1 style={{ fontWeight: 700, fontSize: 48, lineHeight: 1.12, letterSpacing: "-0.02em", color: "#2C3E35", margin: "0 0 22px" }}>
+          <h1 style={{ fontWeight: 700, fontSize: 48, lineHeight: 1.12, letterSpacing: "-0.02em", color: "#1E2D28", margin: "0 0 22px" }}>
             A TRG resolve na <Highlight immediate delay={0.7}>raiz</Highlight>. É assim que a mudança acontece de verdade.
           </h1>
           <p style={{ fontSize: 19, lineHeight: 1.65, color: "#45564C", maxWidth: 600, margin: "0 auto" }}>
@@ -54,15 +54,15 @@ export default function Trg() {
       {/* O QUE É */}
       <section style={{ background: "#FAF7F4", padding: "24px 28px 80px" }}>
         <Reveal className="rgrid" style={{ maxWidth: 1180, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 22 }}>
-          <div style={{ background: "#fff", borderRadius: 20, padding: 36, boxShadow: "0 8px 24px rgba(44,62,53,0.06)" }}>
-            <h2 style={{ fontWeight: 600, fontSize: 23, color: "#2C3E35", margin: "0 0 14px" }}>Não é fraqueza. É natureza humana.</h2>
+          <div style={{ background: "#fff", borderRadius: 20, padding: 36, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
+            <h2 style={{ fontWeight: 600, fontSize: 23, color: "#1E2D28", margin: "0 0 14px" }}>Não é fraqueza. É natureza humana.</h2>
             <p style={{ fontSize: 16, lineHeight: 1.72, color: "#45564C", margin: 0 }}>
               O sofrimento que se repete não vem por falta de esforço. Simplesmente porque a mente humana não foi criada para carregar tudo sozinha. Algumas dores ficam presas — e continuam agindo por baixo, mesmo anos depois.
             </p>
           </div>
-          <div style={{ background: "#2C3E35", color: "#fff", borderRadius: 20, padding: 36, boxShadow: "0 8px 24px rgba(44,62,53,0.1)" }}>
-            <h2 style={{ fontWeight: 600, fontSize: 23, margin: "0 0 14px" }}>A TRG vai direto à raiz.</h2>
-            <p style={{ fontSize: 16, lineHeight: 1.72, color: "#CFE8DD", margin: 0 }}>
+          <div style={{ background: "#F0F7F4", border: "1px solid #C8E6DE", borderRadius: 20, padding: 36 }}>
+            <h2 style={{ fontWeight: 600, fontSize: 23, color: "#1E2D28", margin: "0 0 14px" }}>A TRG vai direto à raiz.</h2>
+            <p style={{ fontSize: 16, lineHeight: 1.72, color: "#4A6B62", margin: 0 }}>
               Ela acessa as lembranças traumáticas que ficaram presas e as reprocessa em profundidade. À medida que isso acontece, tudo começa a se reconstruir — por dentro e por fora. O processo acontece — e a transformação também.
             </p>
           </div>
@@ -70,23 +70,23 @@ export default function Trg() {
       </section>
 
       {/* PASSADO PRESENTE FUTURO */}
-      <section style={{ background: "#E8F4F0", padding: "80px 28px" }}>
+      <section style={{ background: "#F0F7F4", padding: "80px 28px" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto" }}>
           <Reveal style={{ maxWidth: 680, margin: "0 auto 44px", textAlign: "center" }}>
             <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 16 }}>
               O que a torna única
             </span>
-            <h2 style={{ fontWeight: 700, fontSize: 34, lineHeight: 1.18, letterSpacing: "-0.02em", color: "#2C3E35", margin: 0 }}>
+            <h2 style={{ fontWeight: 700, fontSize: 34, lineHeight: 1.18, letterSpacing: "-0.02em", color: "#1E2D28", margin: 0 }}>
               A única terapia que trata passado, presente e futuro.
             </h2>
           </Reveal>
           <Reveal className="rgrid" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }}>
             {timeline.map((t) => (
-              <div key={t.tag} style={{ background: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(44,62,53,0.06)" }}>
+              <div key={t.tag} style={{ background: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
                 <div style={{ fontWeight: 700, fontSize: 13, letterSpacing: "0.14em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 14 }}>
                   {t.tag}
                 </div>
-                <h3 style={{ fontWeight: 600, fontSize: 20, color: "#2C3E35", margin: "0 0 10px" }}>{t.title}</h3>
+                <h3 style={{ fontWeight: 600, fontSize: 20, color: "#1E2D28", margin: "0 0 10px" }}>{t.title}</h3>
                 <p style={{ fontSize: 15, lineHeight: 1.65, color: "#45564C", margin: 0 }}>{t.body}</p>
               </div>
             ))}
@@ -101,7 +101,7 @@ export default function Trg() {
             <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 16 }}>
               Como funciona
             </span>
-            <h2 style={{ fontWeight: 700, fontSize: 36, lineHeight: 1.16, letterSpacing: "-0.02em", color: "#2C3E35", margin: "0 0 10px" }}>
+            <h2 style={{ fontWeight: 700, fontSize: 36, lineHeight: 1.16, letterSpacing: "-0.02em", color: "#1E2D28", margin: "0 0 10px" }}>
               Simples assim.
             </h2>
             <p style={{ fontSize: 17, lineHeight: 1.6, color: "#45564C", margin: 0 }}>
@@ -110,12 +110,12 @@ export default function Trg() {
           </Reveal>
           <Reveal style={{ display: "flex", flexDirection: "column", gap: 16, maxWidth: 820, margin: "0 auto" }}>
             {steps.map((s) => (
-              <div key={s.n} style={{ background: "#fff", borderRadius: 20, padding: "28px 32px", boxShadow: "0 8px 24px rgba(44,62,53,0.06)", display: "flex", gap: 26, alignItems: "flex-start" }}>
-                <span style={{ width: 52, height: 52, borderRadius: "50%", background: "#2C3E35", color: "#5C9E8A", fontWeight: 700, fontSize: 20, display: "flex", alignItems: "center", justifyContent: "center", flex: "none" }}>
+              <div key={s.n} style={{ background: "#fff", borderRadius: 20, padding: "28px 32px", boxShadow: "0 8px 24px rgba(30,45,40,0.06)", display: "flex", gap: 26, alignItems: "flex-start" }}>
+                <span style={{ width: 52, height: 52, borderRadius: "50%", background: "#E0F2EC", color: "#5C9E8A", fontWeight: 700, fontSize: 20, display: "flex", alignItems: "center", justifyContent: "center", flex: "none" }}>
                   {s.n}
                 </span>
                 <div>
-                  <h3 style={{ fontWeight: 600, fontSize: 20, color: "#2C3E35", margin: "0 0 8px" }}>{s.title}</h3>
+                  <h3 style={{ fontWeight: 600, fontSize: 20, color: "#1E2D28", margin: "0 0 8px" }}>{s.title}</h3>
                   <p style={{ fontSize: 15.5, lineHeight: 1.7, color: "#45564C", margin: 0 }}>{s.body}</p>
                 </div>
               </div>
@@ -131,13 +131,13 @@ export default function Trg() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: "#2C3E35", color: "#fff", padding: "88px 28px" }}>
+      <section style={{ background: "#F0F7F4", color: "#1E2D28", padding: "88px 28px" }}>
         <div style={{ maxWidth: 820, margin: "0 auto" }}>
           <Reveal style={{ textAlign: "center", marginBottom: 44 }}>
             <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 16 }}>
               Perguntas frequentes
             </span>
-            <h2 style={{ fontWeight: 700, fontSize: 34, lineHeight: 1.18, letterSpacing: "-0.02em", margin: 0 }}>
+            <h2 style={{ fontWeight: 700, fontSize: 34, lineHeight: 1.18, letterSpacing: "-0.02em", color: "#1E2D28", margin: 0 }}>
               Perguntas que todo mundo tem antes de começar.
             </h2>
           </Reveal>

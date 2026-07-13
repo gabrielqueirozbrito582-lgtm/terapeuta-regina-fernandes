@@ -35,11 +35,11 @@ const variants: Record<"solid" | "lime", CSSProperties> = {
   },
   lime: {
     background: "#FFFFFF",
-    color: "#2C3E35",
+    color: "#1E2D28",
     fontWeight: 700,
     fontSize: "17px",
     padding: "17px 32px",
-    boxShadow: "0 12px 30px rgba(44,62,53,0.2)",
+    boxShadow: "0 12px 30px rgba(30,45,40,0.2)",
   },
 };
 
@@ -58,7 +58,7 @@ export default function MagButton({
     if (!el) return;
     gsap.to(el, { y: -3, scale: 1.015, duration: 0.35, ease: "power3.out" });
     if (variant === "solid") el.style.background = "#3D8B6F";
-    if (variant === "lime") el.style.background = "#E8F4F0";
+    if (variant === "lime") el.style.background = "#F0F7F4";
   };
 
   const onLeave = () => {

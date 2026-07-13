@@ -29,7 +29,7 @@ export default function Footer() {
                   flex: "none",
                 }}
               >
-                <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2C3E35" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#1E2D28" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M11 20A7 7 0 0 1 4 13V6a1 1 0 0 1 1-1h6a7 7 0 0 1 7 7v1"></path>
                   <path d="M11 20a9 9 0 0 1 4-15"></path>
                 </svg>
@@ -53,7 +53,7 @@ export default function Footer() {
                 alignItems: "center",
                 gap: 8,
                 background: "#5C9E8A",
-                color: "#2C3E35",
+                color: "#1E2D28",
                 fontWeight: 600,
                 fontSize: 14,
                 padding: "11px 20px",
@@ -61,7 +61,7 @@ export default function Footer() {
                 textDecoration: "none",
               }}
             >
-              <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#2C3E35" }}></span>
+              <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#1E2D28" }}></span>
               Falar no WhatsApp
             </a>
           </div>
@@ -80,7 +80,7 @@ export default function Footer() {
             <div style={{ fontWeight: 600, fontSize: 12, letterSpacing: "0.16em", textTransform: "uppercase", color: "#7FC2A8", marginBottom: 16 }}>
               Atendimento
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 11, fontSize: 14.5, color: "#E8F4F0" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: 11, fontSize: 14.5, color: "#F0F7F4" }}>
               <span>Presencial em São Paulo</span>
               <span>Online — Brasil e exterior</span>
               <a href={INSTAGRAM_URL} target="_blank" rel="noopener" className="footer-link">

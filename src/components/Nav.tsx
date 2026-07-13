@@ -139,7 +139,7 @@ export default function Nav() {
             />
           </span>
           <span style={{ display: "flex", flexDirection: "column", lineHeight: 1.05 }}>
-            <span style={{ fontWeight: 600, fontSize: 16, color: "#2C3E35", letterSpacing: "-0.01em" }}>
+            <span style={{ fontWeight: 600, fontSize: 16, color: "#1E2D28", letterSpacing: "-0.01em" }}>
               Regina Fernandes
             </span>
             <span style={{ fontWeight: 500, fontSize: 10, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A" }}>
@@ -219,9 +219,9 @@ export default function Nav() {
           }}
         >
           <span style={{ display: "flex", flexDirection: "column", gap: 5, width: 22 }}>
-            <span ref={barTopRef} style={{ display: "block", width: 22, height: 2, borderRadius: 2, background: "#2C3E35", transformOrigin: "50% 50%" }} />
-            <span ref={barMidRef} style={{ display: "block", width: 22, height: 2, borderRadius: 2, background: "#2C3E35" }} />
-            <span ref={barBotRef} style={{ display: "block", width: 22, height: 2, borderRadius: 2, background: "#2C3E35", transformOrigin: "50% 50%" }} />
+            <span ref={barTopRef} style={{ display: "block", width: 22, height: 2, borderRadius: 2, background: "#1E2D28", transformOrigin: "50% 50%" }} />
+            <span ref={barMidRef} style={{ display: "block", width: 22, height: 2, borderRadius: 2, background: "#1E2D28" }} />
+            <span ref={barBotRef} style={{ display: "block", width: 22, height: 2, borderRadius: 2, background: "#1E2D28", transformOrigin: "50% 50%" }} />
           </span>
         </button>
       </div>

@@ -33,8 +33,8 @@ export default function FaqItem({ q, a }: { q: string; a: string }) {
   return (
     <div
       style={{
-        background: "rgba(255,255,255,0.06)",
-        border: "1px solid rgba(255,255,255,0.12)",
+        background: "#fff",
+        border: "1px solid #C8E6DE",
         borderRadius: 16,
         overflow: "hidden",
       }}
@@ -53,7 +53,7 @@ export default function FaqItem({ q, a }: { q: string; a: string }) {
           gap: 18,
           fontWeight: 600,
           fontSize: 17,
-          color: "#fff",
+          color: "#1E2D28",
           width: "100%",
         }}
       >
@@ -72,7 +72,7 @@ export default function FaqItem({ q, a }: { q: string; a: string }) {
         </span>
       </button>
       <div ref={bodyRef} style={{ overflow: "hidden" }}>
-        <div style={{ padding: "0 26px 24px", fontSize: 15.5, lineHeight: 1.72, color: "#CFE8DD" }}>{a}</div>
+        <div style={{ padding: "0 26px 24px", fontSize: 15.5, lineHeight: 1.72, color: "#4A6B62" }}>{a}</div>
       </div>
     </div>
   );

@@ -54,7 +54,7 @@ export default function Sobre() {
             <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 20 }}>
               Sobre a Terapeuta Regina
             </span>
-            <h1 style={{ fontWeight: 700, fontSize: 46, lineHeight: 1.12, letterSpacing: "-0.02em", color: "#2C3E35", margin: "0 0 22px" }}>
+            <h1 style={{ fontWeight: 700, fontSize: 46, lineHeight: 1.12, letterSpacing: "-0.02em", color: "#1E2D28", margin: "0 0 22px" }}>
               Eu resgato a vontade de viver de quem já tinha perdido a{" "}
               <Highlight immediate delay={0.7}>esperança</Highlight>.
             </h1>
@@ -77,7 +77,7 @@ export default function Sobre() {
                 position: "relative",
                 borderRadius: 26,
                 overflow: "hidden",
-                boxShadow: "0 24px 60px rgba(44,62,53,0.2)",
+                boxShadow: "0 24px 60px rgba(30,45,40,0.2)",
                 border: "6px solid #fff",
                 height: 480,
               }}
@@ -122,7 +122,7 @@ export default function Sobre() {
           <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 16 }}>
             Como tudo começou
           </span>
-          <h2 style={{ fontWeight: 700, fontSize: 32, lineHeight: 1.2, letterSpacing: "-0.02em", color: "#2C3E35", margin: "0 0 24px" }}>
+          <h2 style={{ fontWeight: 700, fontSize: 32, lineHeight: 1.2, letterSpacing: "-0.02em", color: "#1E2D28", margin: "0 0 24px" }}>
             A terapia chegou até mim por amor — e por necessidade.
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: 20, fontSize: 17, lineHeight: 1.78, color: "#45564C" }}>
@@ -137,17 +137,17 @@ export default function Sobre() {
       </section>
 
       {/* POR QUE A TRG */}
-      <section style={{ background: "#2C3E35", color: "#fff", padding: "80px 28px" }}>
+      <section style={{ background: "#F0F7F4", color: "#1E2D28", padding: "80px 28px" }}>
         <Reveal className="rgrid" style={{ maxWidth: 900, margin: "0 auto", display: "grid", gridTemplateColumns: "0.9fr 1.1fr", gap: 52, alignItems: "start" }}>
           <div>
             <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 16 }}>
               Por que a TRG
             </span>
-            <h2 style={{ fontWeight: 700, fontSize: 30, lineHeight: 1.22, letterSpacing: "-0.02em", margin: 0 }}>
+            <h2 style={{ fontWeight: 700, fontSize: 30, lineHeight: 1.22, letterSpacing: "-0.02em", color: "#1E2D28", margin: 0 }}>
               Quando encontrei a TRG, encontrei o que eu procurava.
             </h2>
           </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 18, fontSize: 16.5, lineHeight: 1.75, color: "#CFE8DD" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 18, fontSize: 16.5, lineHeight: 1.75, color: "#4A6B62" }}>
             <p style={{ margin: 0 }}>
               A Terapia de Reprocessamento Generativo me mostrou algo que outras abordagens não davam: um processo com começo, meio e fim, que vai direto à raiz e reconstrói a pessoa por dentro.
             </p>
@@ -165,31 +165,31 @@ export default function Sobre() {
             <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 16 }}>
               Formação & credenciais
             </span>
-            <h2 style={{ fontWeight: 700, fontSize: 34, lineHeight: 1.18, letterSpacing: "-0.02em", color: "#2C3E35", margin: 0 }}>
+            <h2 style={{ fontWeight: 700, fontSize: 34, lineHeight: 1.18, letterSpacing: "-0.02em", color: "#1E2D28", margin: 0 }}>
               Duas lentes para enxergar você com profundidade.
             </h2>
           </Reveal>
           <Reveal className="rgrid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 22 }}>
-            <div style={{ background: "#fff", borderRadius: 20, padding: 34, boxShadow: "0 8px 24px rgba(44,62,53,0.06)" }}>
-              <span style={{ width: 52, height: 52, borderRadius: 15, background: "#E8F4F0", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 20 }}>
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2C3E35" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <div style={{ background: "#fff", borderRadius: 20, padding: 34, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
+              <span style={{ width: 52, height: 52, borderRadius: 15, background: "#F0F7F4", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 20 }}>
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E2D28" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path>
                   <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path>
                 </svg>
               </span>
-              <h3 style={{ fontWeight: 600, fontSize: 21, color: "#2C3E35", margin: "0 0 10px" }}>Terapeuta TRG</h3>
+              <h3 style={{ fontWeight: 600, fontSize: 21, color: "#1E2D28", margin: "0 0 10px" }}>Terapeuta TRG</h3>
               <p style={{ fontSize: 15.5, lineHeight: 1.7, color: "#45564C", margin: 0 }}>
                 Formada em Terapia de Reprocessamento Generativo — a abordagem que acessa e reprocessa as lembranças traumáticas guardadas no inconsciente, tratando a raiz do sofrimento com velocidade e profundidade.
               </p>
             </div>
-            <div style={{ background: "#fff", borderRadius: 20, padding: 34, boxShadow: "0 8px 24px rgba(44,62,53,0.06)" }}>
-              <span style={{ width: 52, height: 52, borderRadius: 15, background: "#E8F4F0", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 20 }}>
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2C3E35" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <div style={{ background: "#fff", borderRadius: 20, padding: 34, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
+              <span style={{ width: 52, height: 52, borderRadius: 15, background: "#F0F7F4", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 20 }}>
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E2D28" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                   <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                 </svg>
               </span>
-              <h3 style={{ fontWeight: 600, fontSize: 21, color: "#2C3E35", margin: "0 0 10px" }}>Psicanalista</h3>
+              <h3 style={{ fontWeight: 600, fontSize: 21, color: "#1E2D28", margin: "0 0 10px" }}>Psicanalista</h3>
               <p style={{ fontSize: 15.5, lineHeight: 1.7, color: "#45564C", margin: 0 }}>
                 A formação em Psicanálise soma escuta, contexto e compreensão profunda da história de cada pessoa. Juntas, as duas abordagens significam mais precisão, mais profundidade e mais resultado.
               </p>
@@ -214,20 +214,20 @@ export default function Sobre() {
       </section>
 
       {/* COMO ELA ATENDE */}
-      <section style={{ background: "#E8F4F0", padding: "80px 28px" }}>
+      <section style={{ background: "#F0F7F4", padding: "80px 28px" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto" }}>
           <Reveal style={{ maxWidth: 640, margin: "0 auto 44px", textAlign: "center" }}>
             <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 16 }}>
               Como eu atendo
             </span>
-            <h2 style={{ fontWeight: 700, fontSize: 34, lineHeight: 1.18, letterSpacing: "-0.02em", color: "#2C3E35", margin: 0 }}>
+            <h2 style={{ fontWeight: 700, fontSize: 34, lineHeight: 1.18, letterSpacing: "-0.02em", color: "#1E2D28", margin: 0 }}>
               Um cuidado que se adapta à sua vida.
             </h2>
           </Reveal>
           <Reveal className="rgrid" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }}>
             {attend.map((a) => (
-              <div key={a.title} style={{ background: "#fff", borderRadius: 20, padding: 30, boxShadow: "0 8px 24px rgba(44,62,53,0.06)" }}>
-                <h3 style={{ fontWeight: 600, fontSize: 19, color: "#2C3E35", margin: "0 0 10px" }}>{a.title}</h3>
+              <div key={a.title} style={{ background: "#fff", borderRadius: 20, padding: 30, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
+                <h3 style={{ fontWeight: 600, fontSize: 19, color: "#1E2D28", margin: "0 0 10px" }}>{a.title}</h3>
                 <p style={{ fontSize: 15, lineHeight: 1.65, color: "#45564C", margin: 0 }}>{a.body}</p>
               </div>
             ))}
@@ -238,7 +238,7 @@ export default function Sobre() {
       {/* CTA */}
       <section style={{ background: "#FAF7F4", padding: "80px 28px 96px" }}>
         <Reveal style={{ maxWidth: 820, margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontWeight: 700, fontSize: 34, lineHeight: 1.18, letterSpacing: "-0.02em", color: "#2C3E35", margin: "0 0 16px" }}>
+          <h2 style={{ fontWeight: 700, fontSize: 34, lineHeight: 1.18, letterSpacing: "-0.02em", color: "#1E2D28", margin: "0 0 16px" }}>
             Se você chegou até aqui, talvez seja a hora.
           </h2>
           <p style={{ fontSize: 17, lineHeight: 1.65, color: "#45564C", maxWidth: 520, margin: "0 auto 32px" }}>

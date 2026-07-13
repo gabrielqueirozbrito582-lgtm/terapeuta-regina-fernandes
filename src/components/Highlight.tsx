@@ -52,7 +52,7 @@ export default function Highlight({
     <span
       ref={ref}
       style={{
-        background: "linear-gradient(#E8F4F0,#E8F4F0)",
+        background: "linear-gradient(#F0F7F4,#F0F7F4)",
         backgroundSize: "0% 0.42em",
         backgroundPosition: "0 84%",
         backgroundRepeat: "no-repeat",

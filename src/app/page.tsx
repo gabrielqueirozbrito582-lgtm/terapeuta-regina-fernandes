@@ -28,7 +28,7 @@ export default function Home() {
             width: 520,
             height: 520,
             borderRadius: "50%",
-            background: "#E8F4F0",
+            background: "#F0F7F4",
             filter: "blur(10px)",
             opacity: 0.7,
           }}
@@ -56,7 +56,7 @@ export default function Home() {
                 fontSize: 11.5,
                 letterSpacing: "0.16em",
                 textTransform: "uppercase",
-                color: "#2C3E35",
+                color: "#1E2D28",
                 background: "#fff",
                 border: "1px solid #DCEBE5",
                 borderRadius: 999,
@@ -73,7 +73,7 @@ export default function Home() {
                 fontSize: 52,
                 lineHeight: 1.1,
                 letterSpacing: "-0.02em",
-                color: "#2C3E35",
+                color: "#1E2D28",
                 margin: "0 0 22px",
               }}
             >
@@ -95,7 +95,7 @@ export default function Home() {
                   display: "inline-flex",
                   alignItems: "center",
                   gap: 8,
-                  color: "#2C3E35",
+                  color: "#1E2D28",
                   fontWeight: 600,
                   fontSize: 15,
                   padding: "15px 22px",
@@ -139,7 +139,7 @@ export default function Home() {
               style={{
                 position: "absolute",
                 inset: "14px 30px -22px -20px",
-                background: "#2C3E35",
+                background: "#C8E6DE",
                 borderRadius: 32,
                 transform: "rotate(2.5deg)",
               }}
@@ -149,7 +149,7 @@ export default function Home() {
                 position: "relative",
                 borderRadius: 28,
                 overflow: "hidden",
-                boxShadow: "0 24px 60px rgba(44,62,53,0.2)",
+                boxShadow: "0 24px 60px rgba(30,45,40,0.2)",
                 border: "6px solid #fff",
                 height: 560,
               }}
@@ -172,7 +172,7 @@ export default function Home() {
                 background: "#fff",
                 borderRadius: 16,
                 padding: "14px 18px",
-                boxShadow: "0 12px 30px rgba(44,62,53,0.14)",
+                boxShadow: "0 12px 30px rgba(30,45,40,0.14)",
                 display: "flex",
                 alignItems: "center",
                 gap: 12,
@@ -183,7 +183,7 @@ export default function Home() {
                   width: 40,
                   height: 40,
                   borderRadius: 12,
-                  background: "#E8F4F0",
+                  background: "#F0F7F4",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -195,7 +195,7 @@ export default function Home() {
                 </svg>
               </span>
               <div>
-                <div style={{ fontWeight: 600, fontSize: 14, color: "#2C3E35" }}>Regina Fernandes</div>
+                <div style={{ fontWeight: 600, fontSize: 14, color: "#1E2D28" }}>Regina Fernandes</div>
                 <div style={{ fontSize: 12, color: "#64766C" }}>Terapeuta TRG · Psicanalista</div>
               </div>
             </FloatyCard>
@@ -204,12 +204,12 @@ export default function Home() {
       </section>
 
       {/* PROBLEMA / DOR */}
-      <section style={{ background: "#2C3E35", color: "#fff", padding: "88px 28px" }}>
+      <section style={{ background: "#F0F7F4", color: "#1E2D28", padding: "88px 28px" }}>
         <Reveal style={{ maxWidth: 820, margin: "0 auto", textAlign: "center" }}>
           <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 20 }}>
             Você não está sozinha nisso
           </span>
-          <h2 style={{ fontWeight: 700, fontSize: 38, lineHeight: 1.18, letterSpacing: "-0.02em", margin: "0 0 16px" }}>
+          <h2 style={{ fontWeight: 700, fontSize: 38, lineHeight: 1.18, letterSpacing: "-0.02em", color: "#1E2D28", margin: "0 0 16px" }}>
             Você reconhece alguma dessas sensações?
           </h2>
         </Reveal>
@@ -218,13 +218,13 @@ export default function Home() {
             <div
               key={pain}
               style={{
-                background: "rgba(255,255,255,0.06)",
-                border: "1px solid rgba(255,255,255,0.1)",
+                background: "#fff",
+                border: "1px solid #C8E6DE",
                 borderRadius: 16,
                 padding: "22px 24px",
                 fontSize: 16,
                 lineHeight: 1.55,
-                color: "#E8F4F0",
+                color: "#1E2D28",
               }}
             >
               {pain}
@@ -232,9 +232,9 @@ export default function Home() {
           ))}
         </Reveal>
         <Reveal style={{ maxWidth: 720, margin: "40px auto 0", textAlign: "center" }}>
-          <p style={{ fontSize: 17, lineHeight: 1.7, color: "#CFE8DD", margin: "0 0 8px" }}>
+          <p style={{ fontSize: 17, lineHeight: 1.7, color: "#6B8F85", margin: "0 0 8px" }}>
             Você já tentou entender. Já tentou superar sozinha. Talvez já tenha feito terapia — mas a sensação de que{" "}
-            <em style={{ color: "#fff", fontStyle: "italic" }}>&ldquo;vai ser assim para sempre&rdquo;</em> ainda está lá.
+            <em style={{ color: "#1E2D28", fontStyle: "italic" }}>&ldquo;vai ser assim para sempre&rdquo;</em> ainda está lá.
           </p>
           <p style={{ fontWeight: 700, fontSize: 34, color: "#5C9E8A", letterSpacing: "-0.01em", margin: "18px 0 0" }}>
             Não vai.
@@ -259,7 +259,7 @@ export default function Home() {
             <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 18 }}>
               A solução
             </span>
-            <h2 style={{ fontWeight: 700, fontSize: 40, lineHeight: 1.14, letterSpacing: "-0.02em", color: "#2C3E35", margin: "0 0 24px" }}>
+            <h2 style={{ fontWeight: 700, fontSize: 40, lineHeight: 1.14, letterSpacing: "-0.02em", color: "#1E2D28", margin: "0 0 24px" }}>
               A TRG resolve na <Highlight>raiz</Highlight>. É assim que a mudança acontece de verdade.
             </h2>
             <Link
@@ -269,7 +269,7 @@ export default function Home() {
                 display: "inline-flex",
                 alignItems: "center",
                 gap: 8,
-                color: "#2C3E35",
+                color: "#1E2D28",
                 fontWeight: 600,
                 fontSize: 15,
                 padding: "14px 22px",
@@ -289,9 +289,9 @@ export default function Home() {
             <p style={{ fontSize: 17, lineHeight: 1.75, color: "#45564C", margin: 0 }}>
               Não por fraqueza. Não por falta de esforço. Simplesmente porque a mente humana não foi criada para carregar tudo sozinha.
             </p>
-            <div style={{ background: "#fff", borderLeft: "4px solid #5C9E8A", borderRadius: 14, padding: "22px 24px", boxShadow: "0 8px 24px rgba(44,62,53,0.06)" }}>
+            <div style={{ background: "#fff", borderLeft: "4px solid #5C9E8A", borderRadius: 14, padding: "22px 24px", boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
               <p style={{ fontSize: 16.5, lineHeight: 1.7, color: "#263B31", margin: 0 }}>
-                A <strong style={{ color: "#2C3E35" }}>TRG — Terapia de Reprocessamento Generativo</strong> acessa as lembranças traumáticas que ficaram presas e as reprocessa em profundidade. Quem chega com o semblante triste vai mudando sessão por sessão. <strong style={{ color: "#2C3E35" }}>O brilho volta. A leveza volta.</strong>
+                A <strong style={{ color: "#1E2D28" }}>TRG — Terapia de Reprocessamento Generativo</strong> acessa as lembranças traumáticas que ficaram presas e as reprocessa em profundidade. Quem chega com o semblante triste vai mudando sessão por sessão. <strong style={{ color: "#1E2D28" }}>O brilho volta. A leveza volta.</strong>
               </p>
             </div>
           </Reveal>
@@ -299,76 +299,76 @@ export default function Home() {
       </section>
 
       {/* DIFERENCIAIS */}
-      <section style={{ background: "#E8F4F0", padding: "92px 28px" }}>
+      <section style={{ background: "#F0F7F4", padding: "92px 28px" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto" }}>
           <Reveal style={{ maxWidth: 720, margin: "0 auto 52px", textAlign: "center" }}>
             <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 18 }}>
               Diferenciais
             </span>
-            <h2 style={{ fontWeight: 700, fontSize: 38, lineHeight: 1.16, letterSpacing: "-0.02em", color: "#2C3E35", margin: 0 }}>
+            <h2 style={{ fontWeight: 700, fontSize: 38, lineHeight: 1.16, letterSpacing: "-0.02em", color: "#1E2D28", margin: 0 }}>
               Por que a TRG com a Terapeuta Regina é diferente de tudo que você já tentou?
             </h2>
           </Reveal>
           <Reveal className="rgrid" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }}>
-            <div style={{ gridColumn: "span 2", background: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(44,62,53,0.06)", display: "flex", gap: 22, alignItems: "flex-start" }}>
-              <span style={{ width: 52, height: 52, borderRadius: 15, background: "#E8F4F0", display: "flex", alignItems: "center", justifyContent: "center", flex: "none" }}>
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2C3E35" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <div style={{ gridColumn: "span 2", background: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(30,45,40,0.06)", display: "flex", gap: 22, alignItems: "flex-start" }}>
+              <span style={{ width: 52, height: 52, borderRadius: 15, background: "#F0F7F4", display: "flex", alignItems: "center", justifyContent: "center", flex: "none" }}>
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E2D28" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path>
                   <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path>
                 </svg>
               </span>
               <div>
-                <h3 style={{ fontWeight: 600, fontSize: 20, color: "#2C3E35", margin: "0 0 8px" }}>Trata a raiz — não só os sintomas</h3>
+                <h3 style={{ fontWeight: 600, fontSize: 20, color: "#1E2D28", margin: "0 0 8px" }}>Trata a raiz — não só os sintomas</h3>
                 <p style={{ fontSize: 15.5, lineHeight: 1.65, color: "#45564C", margin: 0 }}>
                   Outras terapias trabalham o que você pensa e sente no nível consciente. A TRG vai mais fundo: acessa e reprocessa as lembranças traumáticas guardadas no inconsciente. Quando a raiz é tratada, tudo se reconstrói de forma rápida e sem recaída.
                 </p>
               </div>
             </div>
-            <div style={{ background: "#2C3E35", color: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(44,62,53,0.1)" }}>
-              <span style={{ width: 52, height: 52, borderRadius: 15, background: "rgba(217,169,160,0.16)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
+            <div style={{ background: "#fff", border: "1px solid #C8E6DE", borderRadius: 20, padding: 32 }}>
+              <span style={{ width: 52, height: 52, borderRadius: 15, background: "#E0F2EC", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5C9E8A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="10"></circle>
                   <path d="M2 12h20"></path>
                   <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
                 </svg>
               </span>
-              <h3 style={{ fontWeight: 600, fontSize: 19, margin: "0 0 8px" }}>A única terapia que trata passado, presente e futuro</h3>
-              <p style={{ fontSize: 15, lineHeight: 1.65, color: "#CFE8DD", margin: 0 }}>
+              <h3 style={{ fontWeight: 600, fontSize: 19, color: "#1E2D28", margin: "0 0 8px" }}>A única terapia que trata passado, presente e futuro</h3>
+              <p style={{ fontSize: 15, lineHeight: 1.65, color: "#4A6B62", margin: 0 }}>
                 Tem começo, meio e fim. Trabalha o que ficou preso no passado, o que paralisa no presente e o que bloqueia o futuro.
               </p>
             </div>
-            <div style={{ background: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(44,62,53,0.06)" }}>
-              <span style={{ width: 52, height: 52, borderRadius: 15, background: "#E8F4F0", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2C3E35" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <div style={{ background: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
+              <span style={{ width: 52, height: 52, borderRadius: 15, background: "#F0F7F4", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E2D28" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"></path>
                 </svg>
               </span>
-              <h3 style={{ fontWeight: 600, fontSize: 19, color: "#2C3E35", margin: "0 0 8px" }}>Resultados reais já nas primeiras sessões</h3>
+              <h3 style={{ fontWeight: 600, fontSize: 19, color: "#1E2D28", margin: "0 0 8px" }}>Resultados reais já nas primeiras sessões</h3>
               <p style={{ fontSize: 15, lineHeight: 1.65, color: "#45564C", margin: 0 }}>
                 A maioria dos clientes sente diferença já na 3ª ou 4ª sessão. Não é uma terapia que leva anos.
               </p>
             </div>
-            <div style={{ background: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(44,62,53,0.06)" }}>
-              <span style={{ width: 52, height: 52, borderRadius: 15, background: "#E8F4F0", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2C3E35" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <div style={{ background: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
+              <span style={{ width: 52, height: 52, borderRadius: 15, background: "#F0F7F4", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E2D28" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="8" r="6"></circle>
                   <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
                 </svg>
               </span>
-              <h3 style={{ fontWeight: 600, fontSize: 19, color: "#2C3E35", margin: "0 0 8px" }}>Mais de 10 anos de experiência clínica</h3>
+              <h3 style={{ fontWeight: 600, fontSize: 19, color: "#1E2D28", margin: "0 0 8px" }}>Mais de 10 anos de experiência clínica</h3>
               <p style={{ fontSize: 15, lineHeight: 1.65, color: "#45564C", margin: 0 }}>
                 Mais de uma década atendendo pessoas em sofrimento profundo — depressão severa, traumas, fobias, ansiedade. Ela conhece a dor humana de perto.
               </p>
             </div>
             <div style={{ background: "#5C9E8A", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(92,158,138,0.24)" }}>
-              <span style={{ width: 52, height: 52, borderRadius: 15, background: "rgba(44,62,53,0.12)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2C3E35" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <span style={{ width: 52, height: 52, borderRadius: 15, background: "rgba(30,45,40,0.12)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E2D28" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path>
                   <path d="M9 18h6"></path>
                   <path d="M10 22h4"></path>
                 </svg>
               </span>
-              <h3 style={{ fontWeight: 600, fontSize: 19, color: "#2C3E35", margin: "0 0 8px" }}>Dupla formação: TRG + Psicanálise</h3>
+              <h3 style={{ fontWeight: 600, fontSize: 19, color: "#1E2D28", margin: "0 0 8px" }}>Dupla formação: TRG + Psicanálise</h3>
               <p style={{ fontSize: 15, lineHeight: 1.65, color: "#4A2E2A", margin: 0 }}>
                 Enquanto a maioria atua com uma abordagem, a Terapeuta Regina enxerga você com duas lentes: mais profundidade, mais precisão, mais resultado.
               </p>
@@ -384,7 +384,7 @@ export default function Home() {
             <span style={{ display: "inline-block", fontWeight: 600, fontSize: 11.5, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 18 }}>
               Depoimentos reais
             </span>
-            <h2 style={{ fontWeight: 700, fontSize: 38, lineHeight: 1.16, letterSpacing: "-0.02em", color: "#2C3E35", margin: 0 }}>
+            <h2 style={{ fontWeight: 700, fontSize: 38, lineHeight: 1.16, letterSpacing: "-0.02em", color: "#1E2D28", margin: 0 }}>
               O que dizem nossos clientes
             </h2>
           </Reveal>
@@ -419,23 +419,23 @@ export default function Home() {
 
       {/* CTA FINAL */}
       <section style={{ background: "#FAF7F4", padding: "0 28px 96px" }}>
-        <div className="cta-box" style={{ maxWidth: 1080, margin: "0 auto", background: "#2C3E35", borderRadius: 32, padding: "72px 56px", position: "relative", overflow: "hidden", textAlign: "center" }}>
+        <div className="cta-box" style={{ maxWidth: 1080, margin: "0 auto", background: "#5C9E8A", borderRadius: 32, padding: "72px 56px", position: "relative", overflow: "hidden", textAlign: "center" }}>
           <ParallaxBlob
             range={20}
-            style={{ position: "absolute", top: -80, right: -60, width: 280, height: 280, borderRadius: "50%", background: "rgba(217,169,160,0.12)" }}
+            style={{ position: "absolute", top: -80, right: -60, width: 280, height: 280, borderRadius: "50%", background: "rgba(255,255,255,0.12)" }}
           />
           <Reveal style={{ position: "relative" }}>
             <h2 style={{ fontWeight: 700, fontSize: 40, lineHeight: 1.15, letterSpacing: "-0.02em", color: "#fff", margin: "0 0 16px" }}>
-              A TRG resolve. Basta você <span style={{ color: "#5C9E8A" }}>confiar</span>.
+              A TRG resolve. Basta você <span style={{ color: "#1E2D28" }}>confiar</span>.
             </h2>
-            <p style={{ fontSize: 18, lineHeight: 1.65, color: "#CFE8DD", maxWidth: 560, margin: "0 auto 34px" }}>
+            <p style={{ fontSize: 18, lineHeight: 1.65, color: "rgba(255,255,255,0.85)", maxWidth: 560, margin: "0 auto 34px" }}>
               Você já carregou esse peso tempo demais. A primeira mensagem é o passo mais difícil. O resto, a Terapeuta Regina cuida.
             </p>
             <MagButton href={WA_LINK} variant="lime">
-              <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#2C3E35" }}></span>
+              <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#5C9E8A" }}></span>
               Quero agendar minha sessão
             </MagButton>
-            <p style={{ fontSize: 13.5, color: "#7FC2A8", margin: "24px 0 0" }}>
+            <p style={{ fontSize: 13.5, color: "rgba(255,255,255,0.75)", margin: "24px 0 0" }}>
               Atendimento presencial em São Paulo e online para todo o Brasil e exterior.
             </p>
           </Reveal>
