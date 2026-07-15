@@ -46,7 +46,7 @@ export default function Trg() {
             A TRG resolve na <Highlight immediate delay={0.7}>raiz</Highlight>. É assim que a mudança acontece de verdade.
           </h1>
           <p style={{ fontSize: 19, lineHeight: 1.65, color: "#45564C", maxWidth: 600, margin: "0 auto" }}>
-            Ansiedade, depressão, fobias, baixa autoestima, padrões que se repetem — quase sempre são sintomas de algo que ficou guardado no inconsciente sem nunca ter sido reprocessado de verdade.
+            Ansiedade, depressão, fobias, baixa autoestima, padrões que se repetem quase sempre são sintomas de algo que ficou guardado no inconsciente sem nunca ter sido reprocessado de verdade.
           </p>
         </Reveal>
       </section>

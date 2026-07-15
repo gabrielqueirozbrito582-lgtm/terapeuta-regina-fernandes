@@ -288,7 +288,7 @@ export default function Home() {
           </Reveal>
           <Reveal style={{ display: "flex", flexDirection: "column", gap: 18 }}>
             <p style={{ fontSize: 17, lineHeight: 1.75, color: "#45564C", margin: 0 }}>
-              Ansiedade, depressão, fobias, baixa autoestima, padrões que se repetem — quase sempre são sintomas de algo que ficou guardado no inconsciente sem nunca ter sido reprocessado de verdade.
+              Ansiedade, depressão, fobias, baixa autoestima, padrões que se repetem quase sempre são sintomas de algo que ficou guardado no inconsciente sem nunca ter sido reprocessado de verdade.
             </p>
             <p style={{ fontSize: 17, lineHeight: 1.75, color: "#45564C", margin: 0 }}>
               Não por fraqueza. Não por falta de esforço. Simplesmente porque a mente humana não foi criada para carregar tudo sozinha.
