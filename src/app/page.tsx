@@ -394,7 +394,6 @@ export default function Home() {
           </Reveal>
           <Reveal className="rgrid" style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)", gap: 24 }}>
             {[
-              { src: "/images/depoimentos/depoimento-1.jpg", w: 540, h: 812 },
               { src: "/images/depoimentos/depoimento-2.jpg", w: 540, h: 1084 },
               { src: "/images/depoimentos/depoimento-3.jpg", w: 540, h: 1080 },
               { src: "/images/depoimentos/depoimento-4.jpg", w: 540, h: 1073 },
