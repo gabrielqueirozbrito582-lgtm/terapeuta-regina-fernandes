@@ -54,13 +54,13 @@ export default function Trg() {
       {/* O QUE É */}
       <section style={{ background: "#FAF7F4", padding: "24px 28px 80px" }}>
         <Reveal className="rgrid" style={{ maxWidth: 1180, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 22 }}>
-          <div style={{ background: "#fff", borderRadius: 20, padding: 36, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
+          <div className="hcard" style={{ background: "#fff", borderRadius: 20, padding: 36, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
             <h2 style={{ fontWeight: 600, fontSize: 23, color: "#1E2D28", margin: "0 0 14px" }}>Não é fraqueza. É natureza humana.</h2>
             <p style={{ fontSize: 16, lineHeight: 1.72, color: "#45564C", margin: 0 }}>
               O sofrimento que se repete não vem por falta de esforço. Simplesmente porque a mente humana não foi criada para carregar tudo sozinha. Algumas dores ficam presas — e continuam agindo por baixo, mesmo anos depois.
             </p>
           </div>
-          <div style={{ background: "#F0F7F4", border: "1px solid #C8E6DE", borderRadius: 20, padding: 36 }}>
+          <div className="hcard" style={{ background: "#F0F7F4", border: "1px solid #C8E6DE", borderRadius: 20, padding: 36 }}>
             <h2 style={{ fontWeight: 600, fontSize: 23, color: "#1E2D28", margin: "0 0 14px" }}>A TRG vai direto à raiz.</h2>
             <p style={{ fontSize: 16, lineHeight: 1.72, color: "#4A6B62", margin: 0 }}>
               Ela acessa as lembranças traumáticas que ficaram presas e as reprocessa em profundidade. À medida que isso acontece, tudo começa a se reconstruir — por dentro e por fora. O processo acontece — e a transformação também.
@@ -82,7 +82,7 @@ export default function Trg() {
           </Reveal>
           <Reveal className="rgrid" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }}>
             {timeline.map((t) => (
-              <div key={t.tag} style={{ background: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
+              <div key={t.tag} className="hcard" style={{ background: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
                 <div style={{ fontWeight: 700, fontSize: 13, letterSpacing: "0.14em", textTransform: "uppercase", color: "#5C9E8A", marginBottom: 14 }}>
                   {t.tag}
                 </div>
@@ -110,7 +110,7 @@ export default function Trg() {
           </Reveal>
           <Reveal style={{ display: "flex", flexDirection: "column", gap: 16, maxWidth: 820, margin: "0 auto" }}>
             {steps.map((s) => (
-              <div key={s.n} style={{ background: "#fff", borderRadius: 20, padding: "28px 32px", boxShadow: "0 8px 24px rgba(30,45,40,0.06)", display: "flex", gap: 26, alignItems: "flex-start" }}>
+              <div key={s.n} className="hcard" style={{ background: "#fff", borderRadius: 20, padding: "28px 32px", boxShadow: "0 8px 24px rgba(30,45,40,0.06)", display: "flex", gap: 26, alignItems: "flex-start" }}>
                 <span style={{ width: 52, height: 52, borderRadius: "50%", background: "#E0F2EC", color: "#5C9E8A", fontWeight: 700, fontSize: 20, display: "flex", alignItems: "center", justifyContent: "center", flex: "none" }}>
                   {s.n}
                 </span>

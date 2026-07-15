@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { gsap, prefersReducedMotion } from "@/lib/gsap";
+import { gsap, prefersReducedMotion, skipAnimations } from "@/lib/gsap";
 import { WA_LINK } from "@/lib/constants";
 
 const links = [
@@ -33,7 +33,7 @@ export default function Nav() {
   useEffect(() => {
     const nav = navRef.current;
     const logo = logoRef.current;
-    if (!nav || !logo || prefersReducedMotion()) return;
+    if (!nav || !logo || skipAnimations()) return;
 
     const ctx = gsap.context(() => {
       gsap
@@ -54,6 +54,21 @@ export default function Nav() {
 
   useEffect(() => {
     gsap.set(panelRef.current, { height: 0 });
+  }, []);
+
+  useEffect(() => {
+    const bar = navRef.current?.parentElement;
+    if (!bar || skipAnimations()) return;
+
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        bar,
+        { opacity: 0, y: -24 },
+        { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }
+      );
+    });
+
+    return () => ctx.revert();
   }, []);
 
   useEffect(() => {

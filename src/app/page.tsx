@@ -6,6 +6,7 @@ import MagButton from "@/components/MagButton";
 import CountUp from "@/components/CountUp";
 import FloatyCard from "@/components/FloatyCard";
 import ParallaxBlob from "@/components/ParallaxBlob";
+import SplitHeadline from "@/components/SplitHeadline";
 import { WA_LINK } from "@/lib/constants";
 
 const pains = [
@@ -67,7 +68,8 @@ export default function Home() {
               <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#5C9E8A" }}></span>
               Terapia de Reprocessamento Generativo
             </span>
-            <h1
+            <SplitHeadline
+              delay={0.25}
               style={{
                 fontWeight: 700,
                 fontSize: 52,
@@ -79,12 +81,12 @@ export default function Home() {
             >
               Você não precisa carregar esse{" "}
               <Highlight immediate delay={0.9}>peso</Highlight> para sempre.
-            </h1>
+            </SplitHeadline>
             <p style={{ fontSize: 19, lineHeight: 1.6, color: "#45564C", maxWidth: 480, margin: "0 0 34px" }}>
               A TRG resolve na raiz do problema. Sem anos de espera. Resultados reais já nas primeiras sessões.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 14, alignItems: "center" }}>
-              <MagButton href={WA_LINK} variant="solid">
+              <MagButton href={WA_LINK} variant="solid" pulse>
                 <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#5C9E8A" }}></span>
                 Quero agendar minha sessão
               </MagButton>
@@ -144,25 +146,27 @@ export default function Home() {
                 transform: "rotate(2.5deg)",
               }}
             />
-            <div
-              style={{
-                position: "relative",
-                borderRadius: 28,
-                overflow: "hidden",
-                boxShadow: "0 24px 60px rgba(30,45,40,0.2)",
-                border: "6px solid #fff",
-                height: 560,
-              }}
-            >
-              <Image
-                src="/images/regina-retrato.jpg"
-                alt="Terapeuta Regina Fernandes"
-                fill
-                priority
-                sizes="(max-width: 900px) 100vw, 560px"
-                style={{ objectFit: "cover", objectPosition: "center 18%" }}
-              />
-            </div>
+            <Reveal immediate delay={0.35} x={48} scale={0.96}>
+              <div
+                style={{
+                  position: "relative",
+                  borderRadius: 28,
+                  overflow: "hidden",
+                  boxShadow: "0 24px 60px rgba(30,45,40,0.2)",
+                  border: "6px solid #fff",
+                  height: 560,
+                }}
+              >
+                <Image
+                  src="/images/regina-retrato.jpg"
+                  alt="Terapeuta Regina Fernandes"
+                  fill
+                  priority
+                  sizes="(max-width: 900px) 100vw, 560px"
+                  style={{ objectFit: "cover", objectPosition: "center 18%" }}
+                />
+              </div>
+            </Reveal>
             <FloatyCard
               delay={1.3}
               style={{
@@ -289,7 +293,7 @@ export default function Home() {
             <p style={{ fontSize: 17, lineHeight: 1.75, color: "#45564C", margin: 0 }}>
               Não por fraqueza. Não por falta de esforço. Simplesmente porque a mente humana não foi criada para carregar tudo sozinha.
             </p>
-            <div style={{ background: "#fff", borderLeft: "4px solid #5C9E8A", borderRadius: 14, padding: "22px 24px", boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
+            <div className="hcard" style={{ background: "#fff", borderLeft: "4px solid #5C9E8A", borderRadius: 14, padding: "22px 24px", boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
               <p style={{ fontSize: 16.5, lineHeight: 1.7, color: "#263B31", margin: 0 }}>
                 A <strong style={{ color: "#1E2D28" }}>TRG — Terapia de Reprocessamento Generativo</strong> acessa as lembranças traumáticas que ficaram presas e as reprocessa em profundidade. Quem chega com o semblante triste vai mudando sessão por sessão. <strong style={{ color: "#1E2D28" }}>O brilho volta. A leveza volta.</strong>
               </p>
@@ -310,7 +314,7 @@ export default function Home() {
             </h2>
           </Reveal>
           <Reveal className="rgrid" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }}>
-            <div style={{ gridColumn: "span 2", background: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(30,45,40,0.06)", display: "flex", gap: 22, alignItems: "flex-start" }}>
+            <div className="hcard" style={{ gridColumn: "span 2", background: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(30,45,40,0.06)", display: "flex", gap: 22, alignItems: "flex-start" }}>
               <span style={{ width: 52, height: 52, borderRadius: 15, background: "#F0F7F4", display: "flex", alignItems: "center", justifyContent: "center", flex: "none" }}>
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E2D28" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path>
@@ -324,7 +328,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div style={{ background: "#fff", border: "1px solid #C8E6DE", borderRadius: 20, padding: 32 }}>
+            <div className="hcard" style={{ background: "#fff", border: "1px solid #C8E6DE", borderRadius: 20, padding: 32 }}>
               <span style={{ width: 52, height: 52, borderRadius: 15, background: "#E0F2EC", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5C9E8A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="10"></circle>
@@ -337,7 +341,7 @@ export default function Home() {
                 Tem começo, meio e fim. Trabalha o que ficou preso no passado, o que paralisa no presente e o que bloqueia o futuro.
               </p>
             </div>
-            <div style={{ background: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
+            <div className="hcard" style={{ background: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
               <span style={{ width: 52, height: 52, borderRadius: 15, background: "#F0F7F4", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E2D28" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"></path>
@@ -348,7 +352,7 @@ export default function Home() {
                 A maioria dos clientes sente diferença já na 3ª ou 4ª sessão. Não é uma terapia que leva anos.
               </p>
             </div>
-            <div style={{ background: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
+            <div className="hcard" style={{ background: "#fff", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
               <span style={{ width: 52, height: 52, borderRadius: 15, background: "#F0F7F4", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E2D28" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="8" r="6"></circle>
@@ -360,7 +364,7 @@ export default function Home() {
                 Mais de uma década atendendo pessoas em sofrimento profundo — depressão severa, traumas, fobias, ansiedade. Ela conhece a dor humana de perto.
               </p>
             </div>
-            <div style={{ background: "#5C9E8A", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(92,158,138,0.24)" }}>
+            <div className="hcard" style={{ background: "#5C9E8A", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(92,158,138,0.24)" }}>
               <span style={{ width: 52, height: 52, borderRadius: 15, background: "rgba(30,45,40,0.12)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E2D28" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, type CSSProperties, type ReactNode } from "react";
-import { gsap, prefersReducedMotion } from "@/lib/gsap";
+import { gsap, skipAnimations } from "@/lib/gsap";
 
 export default function FloatyCard({
   children,
@@ -18,7 +18,7 @@ export default function FloatyCard({
     const el = ref.current;
     if (!el) return;
 
-    if (prefersReducedMotion()) {
+    if (skipAnimations()) {
       gsap.set(el, { opacity: 1, y: 0 });
       return;
     }

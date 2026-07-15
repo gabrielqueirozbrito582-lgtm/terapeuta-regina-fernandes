@@ -62,7 +62,7 @@ export default function Sobre() {
               Sou Regina Fernandes, terapeuta em Terapia de Reprocessamento Generativo e psicanalista, com mais de 10 anos de experiência clínica. Meu trabalho é acompanhar pessoas em sofrimento profundo até o outro lado — a leveza.
             </p>
           </Reveal>
-          <Reveal immediate delay={0.15} style={{ position: "relative" }}>
+          <Reveal immediate delay={0.15} scale={0.95} style={{ position: "relative" }}>
             <div
               style={{
                 position: "absolute",
@@ -101,7 +101,7 @@ export default function Sobre() {
           {creds.map((c) => {
             const match = c.figure.match(/^\+?(\d+)(.*)$/);
             return (
-              <div key={c.label} style={{ background: "#fff", border: "1px solid #DCEBE5", borderRadius: 16, padding: "22px 24px" }}>
+              <div key={c.label} className="hcard" style={{ background: "#fff", border: "1px solid #DCEBE5", borderRadius: 16, padding: "22px 24px" }}>
                 <div style={{ fontWeight: 700, fontSize: 26, color: "#5C9E8A", letterSpacing: "-0.02em", marginBottom: 4 }}>
                   {match ? (
                     <CountUp value={Number(match[1])} prefix={c.figure.startsWith("+") ? "+" : ""} suffix={match[2]} />
@@ -145,7 +145,7 @@ export default function Sobre() {
               </p>
             </div>
           </Reveal>
-          <Reveal delay={0.15} style={{ position: "relative" }}>
+          <Reveal delay={0.15} scale={0.95} style={{ position: "relative" }}>
             <div
               style={{
                 position: "absolute",
@@ -211,7 +211,7 @@ export default function Sobre() {
             </h2>
           </Reveal>
           <Reveal className="rgrid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 22 }}>
-            <div style={{ background: "#fff", borderRadius: 20, padding: 34, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
+            <div className="hcard" style={{ background: "#fff", borderRadius: 20, padding: 34, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
               <span style={{ width: 52, height: 52, borderRadius: 15, background: "#F0F7F4", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 20 }}>
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E2D28" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path>
@@ -223,7 +223,7 @@ export default function Sobre() {
                 Formada em Terapia de Reprocessamento Generativo — a abordagem que acessa e reprocessa as lembranças traumáticas guardadas no inconsciente, tratando a raiz do sofrimento com velocidade e profundidade.
               </p>
             </div>
-            <div style={{ background: "#fff", borderRadius: 20, padding: 34, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
+            <div className="hcard" style={{ background: "#fff", borderRadius: 20, padding: 34, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
               <span style={{ width: 52, height: 52, borderRadius: 15, background: "#F0F7F4", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 20 }}>
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E2D28" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
@@ -267,7 +267,7 @@ export default function Sobre() {
           </Reveal>
           <Reveal className="rgrid" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }}>
             {attend.map((a) => (
-              <div key={a.title} style={{ background: "#fff", borderRadius: 20, padding: 30, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
+              <div key={a.title} className="hcard" style={{ background: "#fff", borderRadius: 20, padding: 30, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
                 <h3 style={{ fontWeight: 600, fontSize: 19, color: "#1E2D28", margin: "0 0 10px" }}>{a.title}</h3>
                 <p style={{ fontSize: 15, lineHeight: 1.65, color: "#45564C", margin: 0 }}>{a.body}</p>
               </div>

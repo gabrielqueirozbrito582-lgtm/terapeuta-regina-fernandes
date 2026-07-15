@@ -47,7 +47,7 @@ export default function Contato() {
               Sem formulário, sem burocracia, sem compromisso. Você manda uma mensagem no WhatsApp e a Terapeuta Regina responde pessoalmente.
             </p>
           </Reveal>
-          <Reveal immediate delay={0.15} style={{ position: "relative" }}>
+          <Reveal immediate delay={0.15} scale={0.95} style={{ position: "relative" }}>
             <div
               style={{
                 position: "absolute",
@@ -120,7 +120,7 @@ export default function Contato() {
           </div>
           {/* Outros canais + atendimento */}
           <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
-            <div style={{ background: "#fff", borderRadius: 24, padding: 32, boxShadow: "0 8px 24px rgba(30,45,40,0.06)", flex: 1 }}>
+            <div className="hcard" style={{ background: "#fff", borderRadius: 24, padding: 32, boxShadow: "0 8px 24px rgba(30,45,40,0.06)", flex: 1 }}>
               <span style={{ width: 50, height: 50, borderRadius: 14, background: "#F0F7F4", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
                 <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#1E2D28" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="2" y="2" width="20" height="20" rx="5"></rect>
@@ -136,7 +136,7 @@ export default function Contato() {
                 @terapeuta.reginafernandes →
               </a>
             </div>
-            <div style={{ background: "#fff", borderRadius: 24, padding: 32, boxShadow: "0 8px 24px rgba(30,45,40,0.06)", flex: 1 }}>
+            <div className="hcard" style={{ background: "#fff", borderRadius: 24, padding: 32, boxShadow: "0 8px 24px rgba(30,45,40,0.06)", flex: 1 }}>
               <span style={{ width: 50, height: 50, borderRadius: 14, background: "#F0F7F4", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
                 <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#1E2D28" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>

@@ -1,13 +1,15 @@
 "use client";
 
 import { useEffect, useRef, type CSSProperties, type ReactNode } from "react";
-import { gsap, ScrollTrigger, prefersReducedMotion } from "@/lib/gsap";
+import { gsap, ScrollTrigger, skipAnimations } from "@/lib/gsap";
 
 type RevealProps = {
   children: ReactNode;
   className?: string;
   style?: CSSProperties;
   y?: number;
+  x?: number;
+  scale?: number;
   duration?: number;
   stagger?: number;
   delay?: number;
@@ -21,8 +23,10 @@ export default function Reveal({
   className,
   style,
   y = 26,
-  duration = 0.9,
-  stagger = 0.09,
+  x = 0,
+  scale = 1,
+  duration = 0.7,
+  stagger = 0.1,
   delay = 0,
   start = "top 87%",
   immediate = false,
@@ -33,8 +37,8 @@ export default function Reveal({
     const el = ref.current;
     if (!el) return;
 
-    if (prefersReducedMotion()) {
-      gsap.set(el.children.length ? Array.from(el.children) : el, { opacity: 1, y: 0 });
+    if (skipAnimations()) {
+      gsap.set(el.children.length ? Array.from(el.children) : el, { opacity: 1, y: 0, x: 0, scale: 1 });
       return;
     }
 
@@ -43,14 +47,16 @@ export default function Reveal({
     const ctx = gsap.context(() => {
       gsap.fromTo(
         targets,
-        { opacity: 0, y },
+        { opacity: 0, y, x, scale },
         {
           opacity: 1,
           y: 0,
+          x: 0,
+          scale: 1,
           duration,
           stagger,
           delay,
-          ease: "power3.out",
+          ease: "power2.out",
           ...(immediate
             ? {}
             : {
@@ -65,7 +71,7 @@ export default function Reveal({
     }, el);
 
     return () => ctx.revert();
-  }, [y, duration, stagger, delay, start, immediate]);
+  }, [y, x, scale, duration, stagger, delay, start, immediate]);
 
   return (
     <div ref={ref} className={className} style={style}>

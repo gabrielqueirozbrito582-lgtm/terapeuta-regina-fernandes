@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, type CSSProperties } from "react";
-import { gsap, prefersReducedMotion } from "@/lib/gsap";
+import { gsap, skipAnimations } from "@/lib/gsap";
 
 export default function ParallaxBlob({
   style,
@@ -14,7 +14,7 @@ export default function ParallaxBlob({
 
   useEffect(() => {
     const el = ref.current;
-    if (!el || prefersReducedMotion()) return;
+    if (!el || skipAnimations()) return;
 
     const ctx = gsap.context(() => {
       gsap.fromTo(

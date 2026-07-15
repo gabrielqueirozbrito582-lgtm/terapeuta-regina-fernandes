@@ -62,17 +62,52 @@ h2 {
 }
 
 .nav-link {
+  position: relative;
   color: var(--text);
   background: transparent;
   transition: color 0.18s ease, background 0.18s ease;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: 6px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--rose-600);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.28s ease-out;
 }
 .nav-link:hover {
   color: var(--rose-900);
   background: var(--rose-100);
 }
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
 .nav-link.active {
   color: var(--rose-900);
   background: var(--rose-100);
+}
+
+.hcard {
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.hcard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(30, 45, 40, 0.12);
+}
+
+@media (prefers-reduced-motion: reduce), (max-width: 640px) {
+  .nav-link::after,
+  .hcard {
+    transition: none !important;
+  }
+  .hcard:hover {
+    transform: none;
+  }
 }
 
 .footer-link {

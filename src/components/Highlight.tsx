@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, type ReactNode } from "react";
-import { gsap, prefersReducedMotion } from "@/lib/gsap";
+import { gsap, skipAnimations } from "@/lib/gsap";
 
 export default function Highlight({
   children,
@@ -18,7 +18,7 @@ export default function Highlight({
     const el = ref.current;
     if (!el) return;
 
-    if (prefersReducedMotion()) {
+    if (skipAnimations()) {
       gsap.set(el, { backgroundSize: "100% 0.42em" });
       return;
     }

@@ -1,7 +1,7 @@
 "use client";
 
-import { useRef, type CSSProperties, type ReactNode } from "react";
-import { gsap } from "@/lib/gsap";
+import { useEffect, useRef, type CSSProperties, type ReactNode } from "react";
+import { gsap, skipAnimations } from "@/lib/gsap";
 
 type MagButtonProps = {
   href: string;
@@ -10,6 +10,8 @@ type MagButtonProps = {
   external?: boolean;
   style?: CSSProperties;
   className?: string;
+  /** Plays a soft pulse a couple of times after it settles in — use for the single primary CTA on a page. */
+  pulse?: boolean;
 };
 
 const base: CSSProperties = {
@@ -50,13 +52,38 @@ export default function MagButton({
   external = true,
   style,
   className,
+  pulse = false,
 }: MagButtonProps) {
   const ref = useRef<HTMLAnchorElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || !pulse || skipAnimations()) return;
+
+    const ctx = gsap.context(() => {
+      gsap.to(el, {
+        scale: 1.04,
+        duration: 0.9,
+        ease: "sine.inOut",
+        yoyo: true,
+        repeat: 3,
+        delay: 1.4,
+      });
+    }, el);
+
+    return () => ctx.revert();
+  }, [pulse]);
 
   const onEnter = () => {
     const el = ref.current;
     if (!el) return;
-    gsap.to(el, { y: -3, scale: 1.015, duration: 0.35, ease: "power3.out" });
+    gsap.to(el, {
+      y: -3,
+      scale: 1.03,
+      boxShadow: variant === "solid" ? "0 16px 34px rgba(92,158,138,0.4)" : "0 16px 36px rgba(30,45,40,0.28)",
+      duration: 0.35,
+      ease: "power3.out",
+    });
     if (variant === "solid") el.style.background = "#3D8B6F";
     if (variant === "lime") el.style.background = "#F0F7F4";
   };
@@ -64,7 +91,13 @@ export default function MagButton({
   const onLeave = () => {
     const el = ref.current;
     if (!el) return;
-    gsap.to(el, { y: 0, scale: 1, duration: 0.45, ease: "elastic.out(1, 0.5)" });
+    gsap.to(el, {
+      y: 0,
+      scale: 1,
+      boxShadow: variant === "solid" ? "0 12px 28px rgba(92,158,138,0.28)" : "0 12px 30px rgba(30,45,40,0.2)",
+      duration: 0.45,
+      ease: "elastic.out(1, 0.5)",
+    });
     if (variant === "solid") el.style.background = "#5C9E8A";
     if (variant === "lime") el.style.background = "#FFFFFF";
   };
