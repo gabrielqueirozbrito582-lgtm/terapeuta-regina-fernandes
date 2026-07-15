@@ -365,15 +365,15 @@ export default function Home() {
               </p>
             </div>
             <div className="hcard" style={{ background: "#5C9E8A", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(92,158,138,0.24)" }}>
-              <span style={{ width: 52, height: 52, borderRadius: 15, background: "rgba(30,45,40,0.12)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E2D28" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <span style={{ width: 52, height: 52, borderRadius: 15, background: "rgba(255,255,255,0.18)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path>
                   <path d="M9 18h6"></path>
                   <path d="M10 22h4"></path>
                 </svg>
               </span>
-              <h3 style={{ fontWeight: 600, fontSize: 19, color: "#1E2D28", margin: "0 0 8px" }}>Dupla formação: TRG + Psicanálise</h3>
-              <p style={{ fontSize: 15, lineHeight: 1.65, color: "#4A2E2A", margin: 0 }}>
+              <h3 style={{ fontWeight: 600, fontSize: 19, color: "#fff", margin: "0 0 8px" }}>Dupla formação: TRG + Psicanálise</h3>
+              <p style={{ fontSize: 15, lineHeight: 1.65, color: "rgba(255,255,255,0.9)", margin: 0 }}>
                 Enquanto a maioria atua com uma abordagem, a Terapeuta Regina enxerga você com duas lentes: mais profundidade, mais precisão, mais resultado.
               </p>
             </div>
