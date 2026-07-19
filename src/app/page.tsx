@@ -428,6 +428,27 @@ export default function Home() {
             style={{ position: "absolute", top: -80, right: -60, width: 280, height: 280, borderRadius: "50%", background: "rgba(255,255,255,0.12)" }}
           />
           <Reveal style={{ position: "relative" }}>
+            <div
+              className="cta-avatar"
+              style={{
+                width: 96,
+                height: 96,
+                borderRadius: "50%",
+                overflow: "hidden",
+                margin: "0 auto 22px",
+                border: "3px solid rgba(255,255,255,0.8)",
+                boxShadow: "0 12px 28px rgba(30,45,40,0.25)",
+                position: "relative",
+              }}
+            >
+              <Image
+                src="/images/regina-cta.jpg"
+                alt="Terapeuta Regina Fernandes sorrindo"
+                fill
+                sizes="96px"
+                style={{ objectFit: "cover", objectPosition: "center 20%" }}
+              />
+            </div>
             <h2 style={{ fontWeight: 700, fontSize: 40, lineHeight: 1.15, letterSpacing: "-0.02em", color: "#fff", margin: "0 0 16px" }}>
               A TRG resolve. Basta você <span style={{ color: "#1E2D28" }}>confiar</span>.
             </h2>

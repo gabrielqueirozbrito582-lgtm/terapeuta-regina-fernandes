@@ -204,4 +204,8 @@ h2 {
     font-size: 11.5px !important;
     line-height: 1.35;
   }
+  .cta-avatar {
+    width: clamp(72px, 22vw, 96px) !important;
+    height: clamp(72px, 22vw, 96px) !important;
+  }
 }
