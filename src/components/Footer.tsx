@@ -42,7 +42,7 @@ export default function Footer() {
               </span>
             </div>
             <p style={{ fontSize: 14.5, lineHeight: 1.65, color: "#CFE8DD", maxWidth: 340, margin: "0 0 22px" }}>
-              Terapia de Reprocessamento Generativo. Resolvendo na raiz — para você voltar a viver com leveza.
+              Terapia de Reprocessamento Generativo. Resolvendo na raiz para você voltar a viver com leveza.
             </p>
             <a
               href={WA_LINK}
@@ -82,7 +82,7 @@ export default function Footer() {
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 11, fontSize: 14.5, color: "#F0F7F4" }}>
               <span>Presencial em São Paulo</span>
-              <span>Online — Brasil e exterior</span>
+              <span>Online. Brasil e exterior</span>
               <a href={INSTAGRAM_URL} target="_blank" rel="noopener" className="footer-link">
                 @terapeuta.reginafernandes
               </a>

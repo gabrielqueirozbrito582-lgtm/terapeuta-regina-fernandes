@@ -22,7 +22,7 @@ const creds = [
 const attend = [
   {
     title: "Presencial ou online",
-    body: "Atendo presencialmente em São Paulo e online para o Brasil e o exterior — com a mesma qualidade e os mesmos resultados.",
+    body: "Atendo presencialmente em São Paulo e online para o Brasil e o exterior com a mesma qualidade e os mesmos resultados.",
   },
   {
     title: "Sessões de 50 minutos",
@@ -30,7 +30,7 @@ const attend = [
   },
   {
     title: "Resultados que aparecem",
-    body: "A maioria dos clientes sente diferença já na 3ª ou 4ª sessão. A TRG tem começo, meio e fim — não é uma terapia de anos.",
+    body: "A maioria dos clientes sente diferença já na 3ª ou 4ª sessão. A TRG tem começo, meio e fim. Não é uma terapia de anos.",
   },
 ];
 
@@ -59,7 +59,7 @@ export default function Sobre() {
               <Highlight immediate delay={0.7}>esperança</Highlight>.
             </h1>
             <p style={{ fontSize: 18, lineHeight: 1.7, color: "#45564C", maxWidth: 500, margin: 0 }}>
-              Sou Regina Fernandes, terapeuta em Terapia de Reprocessamento Generativo e psicanalista, com mais de 10 anos de experiência clínica. Meu trabalho é acompanhar pessoas em sofrimento profundo até o outro lado — a leveza.
+              Sou Regina Fernandes, terapeuta em Terapia de Reprocessamento Generativo e psicanalista, com mais de 10 anos de experiência clínica. Meu trabalho é acompanhar pessoas em sofrimento profundo até o outro lado. A leveza.
             </p>
           </Reveal>
           <Reveal immediate delay={0.15} scale={0.95} style={{ position: "relative" }}>
@@ -134,11 +134,11 @@ export default function Sobre() {
               Como tudo começou
             </span>
             <h2 style={{ fontWeight: 700, fontSize: 32, lineHeight: 1.2, letterSpacing: "-0.02em", color: "#1E2D28", margin: "0 0 24px" }}>
-              A terapia chegou até mim por amor — e por necessidade.
+              A terapia chegou até mim por amor e por necessidade.
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 20, fontSize: 17, lineHeight: 1.78, color: "#45564C" }}>
               <p style={{ margin: 0 }}>
-                Eu não escolhi a terapia como uma carreira distante. Ela nasceu de dentro de casa. Vi pessoas que eu amo travadas por dores que ninguém conseguia alcançar — e senti, na pele, o quanto é angustiante assistir a alguém sofrer sem saber como ajudar.
+                Eu não escolhi a terapia como uma carreira distante. Ela nasceu de dentro de casa. Vi pessoas que eu amo travadas por dores que ninguém conseguia alcançar e senti, na pele, o quanto é angustiante assistir a alguém sofrer sem saber como ajudar.
               </p>
               <p style={{ margin: 0 }}>
                 Foi essa necessidade real de cuidar da minha própria família que me levou a estudar a fundo o funcionamento da mente. Eu precisava entender por que a dor ficava presa. E, mais do que entender, precisava de um caminho que realmente libertasse.
@@ -193,7 +193,7 @@ export default function Sobre() {
               A Terapia de Reprocessamento Generativo me mostrou algo que outras abordagens não davam: um processo com começo, meio e fim, que vai direto à raiz e reconstrói a pessoa por dentro.
             </p>
             <p style={{ margin: 0 }}>
-              Me apaixonei por ver a transformação acontecer de verdade. Quem chega com o semblante triste, visivelmente com dor, vai mudando sessão por sessão. O brilho volta. A leveza volta. É por isso que amo o que faço — e não me vejo em outra profissão.
+              Me apaixonei por ver a transformação acontecer de verdade. Quem chega com o semblante triste, visivelmente com dor, vai mudando sessão por sessão. O brilho volta. A leveza volta. É por isso que amo o que faço e não me vejo em outra profissão.
             </p>
           </div>
         </Reveal>
@@ -220,7 +220,7 @@ export default function Sobre() {
               </span>
               <h3 style={{ fontWeight: 600, fontSize: 21, color: "#1E2D28", margin: "0 0 10px" }}>Terapeuta TRG</h3>
               <p style={{ fontSize: 15.5, lineHeight: 1.7, color: "#45564C", margin: 0 }}>
-                Formada em Terapia de Reprocessamento Generativo — a abordagem que acessa e reprocessa as lembranças traumáticas guardadas no inconsciente, tratando a raiz do sofrimento com velocidade e profundidade.
+                Formada em Terapia de Reprocessamento Generativo. A abordagem que acessa e reprocessa as lembranças traumáticas guardadas no inconsciente, tratando a raiz do sofrimento com velocidade e profundidade.
               </p>
             </div>
             <div className="hcard" style={{ background: "#fff", borderRadius: 20, padding: 34, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
@@ -283,7 +283,7 @@ export default function Sobre() {
             Se você chegou até aqui, talvez seja a hora.
           </h2>
           <p style={{ fontSize: 17, lineHeight: 1.65, color: "#45564C", maxWidth: 520, margin: "0 auto 32px" }}>
-            A primeira conversa é sem compromisso e sem pressão. Me chame no WhatsApp — eu respondo pessoalmente.
+            A primeira conversa é sem compromisso e sem pressão. Me chame no WhatsApp. Eu respondo pessoalmente.
           </p>
           <MagButton href={WA_LINK} variant="solid">
             <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#5C9E8A" }}></span>

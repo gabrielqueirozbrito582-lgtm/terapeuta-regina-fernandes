@@ -13,7 +13,7 @@ const pains = [
   "Acorda cansada, sem motivo.",
   "Sente uma ansiedade que não tem nome, não tem origem e não vai embora.",
   "Tem dias em que o choro aparece do nada. Outros em que o vazio é tão grande que dói.",
-  "As mesmas situações, os mesmos padrões, os mesmos problemas continuam se repetindo — como se uma parte de você ainda estivesse presa em algo que aconteceu há anos.",
+  "As mesmas situações, os mesmos padrões, os mesmos problemas continuam se repetindo como se uma parte de você ainda estivesse presa em algo que aconteceu há anos.",
 ];
 
 export default function Home() {
@@ -237,7 +237,7 @@ export default function Home() {
         </Reveal>
         <Reveal style={{ maxWidth: 720, margin: "40px auto 0", textAlign: "center" }}>
           <p style={{ fontSize: 17, lineHeight: 1.7, color: "#6B8F85", margin: "0 0 8px" }}>
-            Você já tentou entender. Já tentou superar sozinha. Talvez já tenha feito terapia — mas a sensação de que{" "}
+            Você já tentou entender. Já tentou superar sozinha. Talvez já tenha feito terapia mas a sensação de que{" "}
             <em style={{ color: "#1E2D28", fontStyle: "italic" }}>&ldquo;vai ser assim para sempre&rdquo;</em> ainda está lá.
           </p>
           <p style={{ fontWeight: 700, fontSize: 34, color: "#5C9E8A", letterSpacing: "-0.01em", margin: "18px 0 0" }}>
@@ -295,7 +295,7 @@ export default function Home() {
             </p>
             <div className="hcard" style={{ background: "#fff", borderLeft: "4px solid #5C9E8A", borderRadius: 14, padding: "22px 24px", boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
               <p style={{ fontSize: 16.5, lineHeight: 1.7, color: "#263B31", margin: 0 }}>
-                A <strong style={{ color: "#1E2D28" }}>TRG — Terapia de Reprocessamento Generativo</strong> acessa as lembranças traumáticas que ficaram presas e as reprocessa em profundidade. Quem chega com o semblante triste vai mudando sessão por sessão. <strong style={{ color: "#1E2D28" }}>O brilho volta. A leveza volta.</strong>
+                A <strong style={{ color: "#1E2D28" }}>TRG Terapia de Reprocessamento Generativo</strong> acessa as lembranças traumáticas que ficaram presas e as reprocessa em profundidade. Quem chega com o semblante triste vai mudando sessão por sessão. <strong style={{ color: "#1E2D28" }}>O brilho volta. A leveza volta.</strong>
               </p>
             </div>
           </Reveal>
@@ -322,7 +322,7 @@ export default function Home() {
                 </svg>
               </span>
               <div>
-                <h3 style={{ fontWeight: 600, fontSize: 20, color: "#1E2D28", margin: "0 0 8px" }}>Trata a raiz — não só os sintomas</h3>
+                <h3 style={{ fontWeight: 600, fontSize: 20, color: "#1E2D28", margin: "0 0 8px" }}>Trata a raiz não só os sintomas</h3>
                 <p style={{ fontSize: 15.5, lineHeight: 1.65, color: "#45564C", margin: 0 }}>
                   Outras terapias trabalham o que você pensa e sente no nível consciente. A TRG vai mais fundo: acessa e reprocessa as lembranças traumáticas guardadas no inconsciente. Quando a raiz é tratada, tudo se reconstrói de forma rápida e sem recaída.
                 </p>
@@ -361,7 +361,7 @@ export default function Home() {
               </span>
               <h3 style={{ fontWeight: 600, fontSize: 19, color: "#1E2D28", margin: "0 0 8px" }}>Mais de 10 anos de experiência clínica</h3>
               <p style={{ fontSize: 15, lineHeight: 1.65, color: "#45564C", margin: 0 }}>
-                Mais de uma década atendendo pessoas em sofrimento profundo — depressão severa, traumas, fobias, ansiedade. Ela conhece a dor humana de perto.
+                Mais de uma década atendendo pessoas em sofrimento profundo. Depressão severa, traumas, fobias, ansiedade. Ela conhece a dor humana de perto.
               </p>
             </div>
             <div className="hcard" style={{ background: "#5C9E8A", borderRadius: 20, padding: 32, boxShadow: "0 8px 24px rgba(92,158,138,0.24)" }}>

@@ -145,7 +145,7 @@ export default function Contato() {
               </span>
               <h3 style={{ fontWeight: 600, fontSize: 19, color: "#1E2D28", margin: "0 0 8px" }}>Onde atendo</h3>
               <p style={{ fontSize: 15, lineHeight: 1.6, color: "#45564C", margin: 0 }}>
-                Presencial em <strong style={{ color: "#1E2D28" }}>São Paulo</strong> e online para <strong style={{ color: "#1E2D28" }}>todo o Brasil e o exterior</strong> — com a mesma qualidade e os mesmos resultados.
+                Presencial em <strong style={{ color: "#1E2D28" }}>São Paulo</strong> e online para <strong style={{ color: "#1E2D28" }}>todo o Brasil e o exterior</strong> com a mesma qualidade e os mesmos resultados.
               </p>
             </div>
           </div>
@@ -166,7 +166,7 @@ export default function Contato() {
               Você está investindo em parar de sofrer. Em dormir bem. Em acordar com leveza. Em se olhar no espelho sem peso. Em ter relacionamentos que não te drenam. Em sentir que tem um futuro.
             </p>
             <p style={{ fontSize: 16.5, lineHeight: 1.75, color: "#263B31", margin: 0 }}>
-              <strong style={{ color: "#1E2D28" }}>O preço não está no site — e não precisa estar.</strong> O que tem valor real não cabe numa tabela. O próximo passo é uma conversa. Sem compromisso. Sem pressão.
+              <strong style={{ color: "#1E2D28" }}>O preço não está no site e não precisa estar.</strong> O que tem valor real não cabe numa tabela. O próximo passo é uma conversa. Sem compromisso. Sem pressão.
             </p>
           </Reveal>
           <Reveal style={{ background: "#fff", borderRadius: 24, padding: "14px 36px", boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
@@ -196,7 +196,7 @@ export default function Contato() {
               Você já carregou esse peso tempo demais.
             </h2>
             <p style={{ fontSize: 18, lineHeight: 1.65, color: "rgba(255,255,255,0.85)", maxWidth: 520, margin: "0 auto 34px" }}>
-              A TRG resolve. Basta você confiar. Me chame agora — o primeiro passo é só uma mensagem.
+              A TRG resolve. Basta você confiar. Me chame agora. O primeiro passo é só uma mensagem.
             </p>
             <MagButton href={WA_LINK} variant="lime">
               <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#5C9E8A" }}></span>

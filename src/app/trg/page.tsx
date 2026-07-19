@@ -13,23 +13,23 @@ export const metadata: Metadata = {
 
 const timeline = [
   { tag: "Passado", title: "O que ficou preso", body: "Reprocessa as lembranças traumáticas que ficaram guardadas no inconsciente e que continuam agindo hoje." },
-  { tag: "Presente", title: "O que paralisa", body: "Libera o que trava você agora — a ansiedade, o vazio, os padrões que se repetem sem explicação." },
+  { tag: "Presente", title: "O que paralisa", body: "Libera o que trava você agora. A ansiedade, o vazio, os padrões que se repetem sem explicação." },
   { tag: "Futuro", title: "O que bloqueia", body: "Abre caminho para o que vem: vontade de viver, autoestima e a leveza de seguir em frente." },
 ];
 
 const steps = [
   { n: "1", title: "Primeiro contato", body: "Você manda uma mensagem no WhatsApp. Sem formulário, sem burocracia. A Terapeuta Regina responde pessoalmente, entende sua situação e tira suas dúvidas." },
-  { n: "2", title: "Acolhimento", body: "A primeira sessão começa com escuta, cuidado e muito acolhimento. Aquele momento é seu — sem julgamento, com sigilo. A Terapeuta Regina entende o que está acontecendo e traça o caminho." },
+  { n: "2", title: "Acolhimento", body: "A primeira sessão começa com escuta, cuidado e muito acolhimento. Aquele momento é seu sem julgamento, com sigilo. A Terapeuta Regina entende o que está acontecendo e traça o caminho." },
   { n: "3", title: "O reprocessamento começa", body: "Sessão a sessão, as lembranças traumáticas são reprocessadas em profundidade. O semblante muda. O peso vai embora. O brilho volta." },
-  { n: "4", title: "Você se reconhece", body: "O processo tem fim. E quando ele chega, você está leve, inteira, dona de si — com vontade de viver." },
+  { n: "4", title: "Você se reconhece", body: "O processo tem fim. E quando ele chega, você está leve, inteira, dona de si com vontade de viver." },
 ];
 
 const faqs = [
   { q: "Vou precisar contar tudo que já passei?", a: "Não. O reprocessamento acontece através das lembranças, mas você não precisa narrar cada detalhe do que viveu. A Terapeuta Regina conduz o processo com cuidado e no seu tempo." },
-  { q: "Em quanto tempo vou sentir resultado?", a: "A maioria dos clientes sente diferença real a partir da 3ª ou 4ª sessão. O reprocessamento da TRG é profundo — e é por isso que os resultados aparecem rápido." },
+  { q: "Em quanto tempo vou sentir resultado?", a: "A maioria dos clientes sente diferença real a partir da 3ª ou 4ª sessão. O reprocessamento da TRG é profundo e é por isso que os resultados aparecem rápido." },
   { q: "O atendimento online funciona igual ao presencial?", a: "Sim. A TRG é igualmente eficaz no formato online. Clientes do Brasil e do exterior passam pelo mesmo processo e têm os mesmos resultados." },
-  { q: "Já fiz terapia antes e não funcionou. Por que seria diferente?", a: "Porque a TRG trata a raiz — não os sintomas. Enquanto outras abordagens trabalham o que você pensa e sente conscientemente, a TRG acessa e reprocessa o que está guardado no inconsciente. É uma abordagem diferente, com resultados diferentes." },
-  { q: "Quanto tempo dura o processo?", a: "Depende de cada pessoa. Mas a TRG tem começo, meio e fim — não é uma terapia de anos. A maioria dos clientes chega ao final muito mais rápido do que esperava." },
+  { q: "Já fiz terapia antes e não funcionou. Por que seria diferente?", a: "Porque a TRG trata a raiz. Não os sintomas. Enquanto outras abordagens trabalham o que você pensa e sente conscientemente, a TRG acessa e reprocessa o que está guardado no inconsciente. É uma abordagem diferente, com resultados diferentes." },
+  { q: "Quanto tempo dura o processo?", a: "Depende de cada pessoa. Mas a TRG tem começo, meio e fim. Não é uma terapia de anos. A maioria dos clientes chega ao final muito mais rápido do que esperava." },
   { q: "Como funciona o primeiro contato?", a: "Você manda uma mensagem no WhatsApp. A Terapeuta Regina responde pessoalmente, entende sua situação e você decide se quer seguir em frente. Sem formulário, sem pressão." },
 ];
 
@@ -57,13 +57,13 @@ export default function Trg() {
           <div className="hcard" style={{ background: "#fff", borderRadius: 20, padding: 36, boxShadow: "0 8px 24px rgba(30,45,40,0.06)" }}>
             <h2 style={{ fontWeight: 600, fontSize: 23, color: "#1E2D28", margin: "0 0 14px" }}>Não é fraqueza. É natureza humana.</h2>
             <p style={{ fontSize: 16, lineHeight: 1.72, color: "#45564C", margin: 0 }}>
-              O sofrimento que se repete não vem por falta de esforço. Simplesmente porque a mente humana não foi criada para carregar tudo sozinha. Algumas dores ficam presas — e continuam agindo por baixo, mesmo anos depois.
+              O sofrimento que se repete não vem por falta de esforço. Simplesmente porque a mente humana não foi criada para carregar tudo sozinha. Algumas dores ficam presas e continuam agindo por baixo, mesmo anos depois.
             </p>
           </div>
           <div className="hcard" style={{ background: "#F0F7F4", border: "1px solid #C8E6DE", borderRadius: 20, padding: 36 }}>
             <h2 style={{ fontWeight: 600, fontSize: 23, color: "#1E2D28", margin: "0 0 14px" }}>A TRG vai direto à raiz.</h2>
             <p style={{ fontSize: 16, lineHeight: 1.72, color: "#4A6B62", margin: 0 }}>
-              Ela acessa as lembranças traumáticas que ficaram presas e as reprocessa em profundidade. À medida que isso acontece, tudo começa a se reconstruir — por dentro e por fora. O processo acontece — e a transformação também.
+              Ela acessa as lembranças traumáticas que ficaram presas e as reprocessa em profundidade. À medida que isso acontece, tudo começa a se reconstruir por dentro e por fora. O processo acontece e a transformação também.
             </p>
           </div>
         </Reveal>

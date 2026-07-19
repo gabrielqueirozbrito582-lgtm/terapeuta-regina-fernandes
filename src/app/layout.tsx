@@ -22,11 +22,15 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: {
-    default: "Regina Fernandes — Terapeuta TRG",
-    template: "%s — Regina Fernandes",
+    default: "Regina Fernandes Terapeuta TRG",
+    template: "%s Regina Fernandes",
   },
   description:
     "Terapia de Reprocessamento Generativo (TRG) com a Terapeuta Regina Fernandes. Resolvendo na raiz, para você voltar a viver com leveza. Presencial em São Paulo e online para o Brasil e o mundo.",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
